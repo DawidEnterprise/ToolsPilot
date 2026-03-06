@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1270px; height: 760px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+
+  .slide { width: 1270px; height: 760px; display: none; position: relative; }
+  .slide.active { display: flex; }
+
+  /* Slide 1: Hero */
+  .slide-1 {
+    background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
+    flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;
+  }
+  .slide-1 .logo { font-size: 80px; margin-bottom: 16px; }
+  .slide-1 h1 { font-size: 56px; font-weight: 800; margin-bottom: 16px; letter-spacing: -1px; }
+  .slide-1 h1 span { color: #60a5fa; }
+  .slide-1 p { font-size: 24px; color: #94a3b8; max-width: 700px; }
+  .slide-1 .badge { margin-top: 32px; display: inline-flex; gap: 24px; }
+  .slide-1 .badge span { background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 999px; font-size: 16px; color: #e2e8f0; }
+
+  /* Slide 2: Features grid */
+  .slide-2 {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    flex-direction: column; align-items: center; justify-content: center; color: white; padding: 60px;
+  }
+  .slide-2 h2 { font-size: 42px; font-weight: 800; margin-bottom: 48px; }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; width: 100%; }
+  .card {
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px; padding: 24px; text-align: center;
+  }
+  .card .icon { font-size: 36px; margin-bottom: 12px; }
+  .card h3 { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+  .card p { font-size: 13px; color: #94a3b8; }
+
+  /* Slide 3: Privacy */
+  .slide-3 {
+    background: linear-gradient(135deg, #0c4a6e 0%, #0f172a 100%);
+    flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;
+  }
+  .slide-3 .shield { font-size: 100px; margin-bottom: 24px; }
+  .slide-3 h2 { font-size: 48px; font-weight: 800; margin-bottom: 16px; }
+  .slide-3 p { font-size: 22px; color: #94a3b8; max-width: 700px; margin-bottom: 40px; }
+  .checks { display: flex; gap: 32px; }
+  .checks div { display: flex; align-items: center; gap: 8px; font-size: 18px; color: #e2e8f0; }
+  .checks .check { color: #34d399; font-size: 24px; }
+
+  /* Controls */
+  .controls { position: fixed; bottom: 10px; right: 10px; z-index: 100; display: flex; gap: 8px; }
+  .controls button {
+    padding: 8px 16px; background: #3b82f6; color: white; border: none; border-radius: 8px;
+    cursor: pointer; font-size: 14px; font-weight: 600;
+  }
+  .controls span { padding: 8px; color: #666; font-size: 14px; }
+</style>
+</head>
+<body>
+  <!-- Slide 1: Hero -->
+  <div class="slide slide-1 active" id="s1">
+    <div class="logo">⚡</div>
+    <h1><span>ToolsPilot</span></h1>
+    <p>28 free online tools for developers, designers &amp; everyone. Runs 100% in your browser.</p>
+    <div class="badge">
+      <span>🔒 No Uploads</span>
+      <span>🚀 Instant Results</span>
+      <span>🌙 Dark Mode</span>
+    </div>
+  </div>
+
+  <!-- Slide 2: Tool grid -->
+  <div class="slide slide-2" id="s2">
+    <h2>28 Tools. Zero Signups.</h2>
+    <div class="grid">
+      <div class="card"><div class="icon">🖼️</div><h3>PNG ↔ JPG</h3><p>Image conversion</p></div>
+      <div class="card"><div class="icon">📐</div><h3>Image Resizer</h3><p>Any dimension</p></div>
+      <div class="card"><div class="icon">🔧</div><h3>JSON Formatter</h3><p>Format & validate</p></div>
+      <div class="card"><div class="icon">🔄</div><h3>JSON ↔ YAML</h3><p>Instant conversion</p></div>
+      <div class="card"><div class="icon">🔑</div><h3>Password Gen</h3><p>Crypto-secure</p></div>
+      <div class="card"><div class="icon">🎨</div><h3>Color Converter</h3><p>HEX / RGB / HSL</p></div>
+      <div class="card"><div class="icon">⏱️</div><h3>Timestamp</h3><p>Unix ↔ Date</p></div>
+      <div class="card"><div class="icon">🔐</div><h3>JWT Decoder</h3><p>Inspect tokens</p></div>
+      <div class="card"><div class="icon">#️⃣</div><h3>Hash Generator</h3><p>SHA-256/512</p></div>
+      <div class="card"><div class="icon">📝</div><h3>Word Counter</h3><p>Full text analysis</p></div>
+      <div class="card"><div class="icon">🔤</div><h3>Case Converter</h3><p>camelCase & more</p></div>
+      <div class="card"><div class="icon">✨</div><h3>+17 More</h3><p>All free forever</p></div>
+    </div>
+  </div>
+
+  <!-- Slide 3: Privacy -->
+  <div class="slide slide-3" id="s3">
+    <div class="shield">🛡️</div>
+    <h2>Your Data Never Leaves Your Browser</h2>
+    <p>Every tool runs 100% client-side using JavaScript. No files uploaded. No data collected. No accounts needed.</p>
+    <div class="checks">
+      <div><span class="check">✓</span> No server uploads</div>
+      <div><span class="check">✓</span> No tracking</div>
+      <div><span class="check">✓</span> No signup</div>
+      <div><span class="check">✓</span> Works offline</div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button onclick="show(1)">1: Hero</button>
+    <button onclick="show(2)">2: Tools</button>
+    <button onclick="show(3)">3: Privacy</button>
+    <span>← screenshot each slide at 1270×760</span>
+  </div>
+
+  <script>
+    function show(n) {
+      document.querySelectorAll('.slide').forEach(s => s.classList.remove('active'));
+      document.getElementById('s'+n).classList.add('active');
+    }
+  </script>
+</body>
+</html>
