@@ -1,7 +1,7 @@
-import Script from "next/script";
-
 /**
  * Google Analytics / gtag.js loader.
+ * Uses plain <script> tags so the tag appears in the initial HTML
+ * (required for Google's tag checker and crawlers).
  */
 export function AnalyticsScript() {
   const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
@@ -9,18 +9,20 @@ export function AnalyticsScript() {
 
   return (
     <>
-      <Script
+      <script
+        async
         src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-        strategy="afterInteractive"
       />
-      <Script id="ga-init" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${gaId}', { page_path: window.location.pathname });
-        `}
-      </Script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${gaId}', { page_path: window.location.pathname });
+          `,
+        }}
+      />
     </>
   );
 }
