@@ -14,11 +14,17 @@ export interface ToolContentSection {
   body: string;
 }
 
+export interface ToolHowToStep {
+  name: string;
+  text: string;
+}
+
 export interface ToolSeoData {
   seoTitle: string;
   seoDescription: string;
   faqs: ToolFaq[];
   content: ToolContentSection[];
+  howTo?: ToolHowToStep[];
 }
 
 export const toolSeoData: Record<string, ToolSeoData> = {
@@ -53,6 +59,12 @@ export const toolSeoData: Record<string, ToolSeoData> = {
         heading: "Why Convert PNG to JPG?",
         body: "JPG files are significantly smaller than PNGs, often 5–10x smaller for photographs. This makes them ideal for websites, email attachments, and social media where fast loading times and bandwidth matter. If your image doesn't require transparency, converting to JPG is the best way to reduce file size without noticeable quality loss.",
       },
+    ],
+    howTo: [
+      { name: "Upload your PNG image", text: "Drag and drop or click to select a PNG file from your device." },
+      { name: "Adjust quality", text: "Use the quality slider to balance file size and image quality." },
+      { name: "Click Convert", text: "Press the Convert button to transform your PNG into JPG format." },
+      { name: "Download", text: "Click the Download button to save your converted JPG file." },
     ],
   },
 
@@ -120,6 +132,12 @@ export const toolSeoData: Record<string, ToolSeoData> = {
         body: "Each platform has recommended image sizes: Instagram posts (1080×1080), Facebook covers (820×312), Twitter headers (1500×500), LinkedIn banners (1584×396). Using the correct dimensions ensures your images display without cropping or stretching.",
       },
     ],
+    howTo: [
+      { name: "Upload your image", text: "Select or drag and drop an image file (JPG, PNG, WebP, GIF) into the resizer." },
+      { name: "Set target dimensions", text: "Enter custom width and height or choose a preset size for social media, HD, or 4K." },
+      { name: "Lock aspect ratio", text: "Toggle the aspect ratio lock to prevent distortion when resizing." },
+      { name: "Download resized image", text: "Click Download to save your resized image in the original format." },
+    ],
   },
 
   // ─── Developer Tools ─────────────────────────────
@@ -153,6 +171,12 @@ export const toolSeoData: Record<string, ToolSeoData> = {
         heading: "Common JSON Syntax Errors",
         body: "The most frequent JSON errors include trailing commas after the last item in an array or object, using single quotes instead of double quotes, unquoted property names, and missing closing brackets. Our validator catches all of these and shows the exact location of each error.",
       },
+    ],
+    howTo: [
+      { name: "Paste your JSON", text: "Copy your raw or minified JSON data and paste it into the editor." },
+      { name: "Click Format", text: "Press the Format button to beautify and validate your JSON instantly." },
+      { name: "Review errors", text: "If your JSON has syntax errors, review the highlighted error messages and fix them." },
+      { name: "Copy the result", text: "Click the Copy button to copy the formatted JSON to your clipboard." },
     ],
   },
 
@@ -318,6 +342,11 @@ export const toolSeoData: Record<string, ToolSeoData> = {
         heading: "Common Uses for Base64 Encoding",
         body: "Base64 is used to embed images in CSS (data URIs), encode binary attachments in email (MIME), include binary data in JSON payloads, and pass data through URL parameters. It increases data size by approximately 33% compared to binary.",
       },
+    ],
+    howTo: [
+      { name: "Enter your text", text: "Type or paste the text you want to encode or decode into the input field." },
+      { name: "Choose Encode or Decode", text: "Click Encode to convert text to Base64, or Decode to convert Base64 back to plain text." },
+      { name: "Copy the result", text: "Click the Copy button to copy the encoded or decoded output to your clipboard." },
     ],
   },
 
@@ -716,6 +745,11 @@ export const toolSeoData: Record<string, ToolSeoData> = {
         body: "Blog posts: 1,000–2,000 words for SEO. Social media: Twitter (280 chars), LinkedIn posts (700–1,300 chars). Academic essays: 2,500–5,000 words. Product descriptions: 150–300 words. Meta descriptions: 150–160 characters. Knowing your word count helps you hit the right length for any platform.",
       },
     ],
+    howTo: [
+      { name: "Paste your text", text: "Type or paste your text into the editor area above." },
+      { name: "View live statistics", text: "Word count, character count, sentence count, and paragraph count update in real time." },
+      { name: "Check reading time", text: "See the estimated reading time based on average adult reading speed (200 wpm)." },
+    ],
   },
 
   "character-counter": {
@@ -946,6 +980,12 @@ export const toolSeoData: Record<string, ToolSeoData> = {
         heading: "Password Security Best Practices",
         body: "Use a unique password for every account. Make passwords at least 16 characters long. Include all character types. Use a password manager to store them securely. Enable two-factor authentication wherever possible. Never reuse passwords across sites.",
       },
+    ],
+    howTo: [
+      { name: "Set password length", text: "Choose your desired password length — 16 characters or more is recommended." },
+      { name: "Select character types", text: "Enable uppercase, lowercase, numbers, and symbols for maximum strength." },
+      { name: "Generate password", text: "Click Generate to create a cryptographically random password." },
+      { name: "Copy and save", text: "Click Copy and store the password in your password manager." },
     ],
   },
 };

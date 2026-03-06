@@ -2,8 +2,9 @@ import Link from "next/link";
 import type { ToolDefinition } from "@/lib/types";
 import { getCategoryMeta } from "@/lib/types";
 import { AdSlot } from "./AdSlot";
-import { getToolBySlug } from "@/lib/registry";
+import { getToolBySlug, getPublishedTools } from "@/lib/registry";
 import { toolSeoData } from "@/lib/seo-data";
+import { ShareButtons } from "./ShareButtons";
 
 interface ToolPageLayoutProps {
   tool: ToolDefinition;
@@ -29,6 +30,15 @@ export function ToolPageLayout({ tool, children }: ToolPageLayoutProps) {
     .map((slug) => getToolBySlug(slug))
     .filter(Boolean) as ToolDefinition[];
 
+  // Popular tools for sidebar (exclude current tool)
+  const popularSlugs = ["json-formatter", "png-to-jpg", "word-counter", "base64-encoder", "password-generator", "image-resizer", "csv-json-converter", "hash-generator"];
+  const popularTools = popularSlugs
+    .filter((s) => s !== tool.slug)
+    .map((s) => getToolBySlug(s))
+    .filter(Boolean) as ToolDefinition[];
+
+  const allToolCount = getPublishedTools().length;
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
       {/* Breadcrumbs */}
@@ -50,6 +60,12 @@ export function ToolPageLayout({ tool, children }: ToolPageLayoutProps) {
           {tool.name}
         </h1>
         <p className="mt-2 text-lg text-gray-600 dark:text-gray-400">{tool.description}</p>
+        <div className="mt-3 flex items-center gap-4">
+          <span className="inline-flex items-center rounded-full bg-green-50 px-2.5 py-0.5 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20 dark:bg-green-900/30 dark:text-green-400 dark:ring-green-500/30">100% Free</span>
+          <span className="inline-flex items-center rounded-full bg-blue-50 px-2.5 py-0.5 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-600/20 dark:bg-blue-900/30 dark:text-blue-400 dark:ring-blue-500/30">No Sign-up</span>
+          <span className="inline-flex items-center rounded-full bg-purple-50 px-2.5 py-0.5 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-600/20 dark:bg-purple-900/30 dark:text-purple-400 dark:ring-purple-500/30">Browser-only</span>
+          <ShareButtons toolSlug={tool.slug} toolName={tool.name} />
+        </div>
       </div>
 
       {/* Ad 1: Leaderboard above the tool */}
@@ -154,17 +170,17 @@ export function ToolPageLayout({ tool, children }: ToolPageLayoutProps) {
             {/* Ad 2: Sidebar sticky ad */}
             <AdSlot position="sidebar" />
 
-            {/* Quick links to boost page views / ad impressions */}
+            {/* Popular tools — internal linking power */}
             <div className="rounded-xl border border-gray-200/80 bg-white p-5 shadow-sm dark:border-gray-700/60 dark:bg-gray-900">
-              <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">More Tools</h3>
+              <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">🔥 Popular Tools</h3>
               <ul className="mt-3 space-y-2">
-                {relatedToolDefs.slice(0, 4).map((related) => (
-                  <li key={related.slug}>
+                {popularTools.slice(0, 6).map((t) => (
+                  <li key={t.slug}>
                     <Link
-                      href={`/tools/${related.slug}`}
+                      href={`/tools/${t.slug}`}
                       className="text-sm text-gray-600 hover:text-brand-600 transition-colors dark:text-gray-400 dark:hover:text-brand-400"
                     >
-                      {related.name}
+                      {t.name}
                     </Link>
                   </li>
                 ))}
@@ -173,11 +189,30 @@ export function ToolPageLayout({ tool, children }: ToolPageLayoutProps) {
                     href="/tools"
                     className="text-sm font-medium text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300"
                   >
-                    View all tools →
+                    All {allToolCount} tools →
                   </Link>
                 </li>
               </ul>
             </div>
+
+            {/* Related tools sidebar */}
+            {relatedToolDefs.length > 0 && (
+              <div className="rounded-xl border border-gray-200/80 bg-white p-5 shadow-sm dark:border-gray-700/60 dark:bg-gray-900">
+                <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">Related Tools</h3>
+                <ul className="mt-3 space-y-2">
+                  {relatedToolDefs.slice(0, 4).map((related) => (
+                    <li key={related.slug}>
+                      <Link
+                        href={`/tools/${related.slug}`}
+                        className="text-sm text-gray-600 hover:text-brand-600 transition-colors dark:text-gray-400 dark:hover:text-brand-400"
+                      >
+                        {related.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </aside>
       </div>

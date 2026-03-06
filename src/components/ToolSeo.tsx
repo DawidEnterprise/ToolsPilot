@@ -111,5 +111,23 @@ export function generateToolJsonLd(tool: ToolDefinition): Record<string, unknown
     ],
   });
 
+  // Add HowTo schema for featured snippets
+  if (seo?.howTo && seo.howTo.length > 0) {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: `How to Use ${tool.name}`,
+      description: seo.seoDescription ?? tool.description,
+      totalTime: "PT1M",
+      tool: { "@type": "HowToTool", name: "Web browser" },
+      step: seo.howTo.map((step, i) => ({
+        "@type": "HowToStep",
+        position: i + 1,
+        name: step.name,
+        text: step.text,
+      })),
+    });
+  }
+
   return schemas;
 }
