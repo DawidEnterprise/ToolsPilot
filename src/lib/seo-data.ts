@@ -1282,4 +1282,435 @@ export const toolSeoData: Record<string, ToolSeoData> = {
       { name: "Click Sort Keys", text: "Press the Sort Keys button to sort all keys recursively." },
     ],
   },
+
+  // ─── Batch 3: 25 New Tools ──────────────────────
+
+  "qr-code-generator": {
+    seoTitle: "Free QR Code Generator Online — Create QR Codes Instantly",
+    seoDescription: "Generate QR codes from any text or URL. Download as SVG or PNG. Free, private, no sign-up required.",
+    faqs: [
+      { question: "How do I generate a QR code?", answer: "Type or paste text/URL in the input field. The QR code generates instantly. Click Download SVG or Download PNG to save it." },
+      { question: "What can I encode in a QR code?", answer: "URLs, plain text, email addresses, phone numbers, Wi-Fi credentials, and more. Any text up to a few thousand characters works." },
+      { question: "Is it free?", answer: "Yes. The tool runs entirely in your browser — no data is sent to any server, and there are no limits." },
+    ],
+    content: [
+      { heading: "Create QR Codes Online", body: "Generate QR codes from any text or URL instantly. The tool supports Version 1 through 10 QR codes with byte-mode encoding and low error correction. Download your code as lossless SVG or raster PNG." },
+    ],
+    howTo: [
+      { name: "Enter text or URL", text: "Type or paste the content you want to encode into the input field." },
+      { name: "Preview QR code", text: "The QR code generates automatically as you type." },
+      { name: "Download", text: "Click Download SVG or Download PNG to save the QR code." },
+    ],
+  },
+
+  "image-compressor": {
+    seoTitle: "Free Image Compressor Online — Reduce Image File Size",
+    seoDescription: "Compress images online for free. Adjust quality, choose output format, and resize. JPEG, PNG, WebP supported.",
+    faqs: [
+      { question: "How does image compression work?", answer: "The tool uses your browser's Canvas API to re-encode the image at a lower quality level, reducing file size while preserving visual quality." },
+      { question: "Which formats are supported?", answer: "You can output JPEG, WebP, or PNG. WebP typically gives the best compression ratio." },
+      { question: "Is my image uploaded anywhere?", answer: "No. All processing happens in your browser. Your images never leave your device." },
+    ],
+    content: [
+      { heading: "Compress Images Online", body: "Reduce image file sizes without sacrificing quality. Upload any image, adjust the quality slider, pick an output format, and optionally resize. Everything runs locally in your browser for full privacy." },
+    ],
+    howTo: [
+      { name: "Upload image", text: "Click Choose File or drag and drop an image." },
+      { name: "Adjust settings", text: "Set quality level, output format, and optional maximum width." },
+      { name: "Download", text: "Click Download Compressed Image to save the result." },
+    ],
+  },
+
+  "unit-converter": {
+    seoTitle: "Free Unit Converter Online — Length, Weight, Temperature & More",
+    seoDescription: "Convert between units of length, weight, temperature, speed, data, time, and area. Fast, free, and accurate.",
+    faqs: [
+      { question: "What categories can I convert?", answer: "Length, weight, temperature, speed, digital data, time, and area — 7 categories with dozens of units each." },
+      { question: "How accurate are the conversions?", answer: "Conversions use precise mathematical formulas. Temperature conversions handle Celsius, Fahrenheit, and Kelvin correctly." },
+    ],
+    content: [
+      { heading: "Universal Unit Converter", body: "Convert between metric, imperial, and other unit systems. Select a category, enter a value, and see all conversions at once. Supports length (km, miles, feet), weight (kg, lbs, oz), temperature (°C, °F, K), and more." },
+    ],
+    howTo: [
+      { name: "Select category", text: "Choose from length, weight, temperature, speed, data, time, or area." },
+      { name: "Enter value", text: "Type a number and select the source unit." },
+      { name: "Read results", text: "All equivalent values in other units appear instantly." },
+    ],
+  },
+
+  "stopwatch": {
+    seoTitle: "Free Online Stopwatch — Millisecond Accuracy with Lap Tracking",
+    seoDescription: "Free online stopwatch with lap tracking. Accurate to milliseconds. Start, stop, lap, and reset instantly.",
+    faqs: [
+      { question: "How accurate is this stopwatch?", answer: "It uses requestAnimationFrame for smooth updates. Display accuracy is to the millisecond, limited only by your browser's timer resolution." },
+      { question: "Can I track laps?", answer: "Yes. Click the Lap button while the stopwatch is running to record split times. All laps are displayed in a list." },
+    ],
+    content: [
+      { heading: "Online Stopwatch with Laps", body: "A precise online stopwatch with lap tracking. Click Start to begin timing, Lap to record splits, and Stop to pause. All timing runs locally in your browser." },
+    ],
+    howTo: [
+      { name: "Start timing", text: "Click the Start button to begin the stopwatch." },
+      { name: "Record laps", text: "Click Lap to capture split times while running." },
+      { name: "Stop and reset", text: "Click Stop to pause, then Reset to clear." },
+    ],
+  },
+
+  "loan-calculator": {
+    seoTitle: "Free Loan Calculator Online — Monthly Payments & Amortization",
+    seoDescription: "Calculate monthly loan payments, total interest, and view a full amortization schedule. Mortgage, auto, personal loans.",
+    faqs: [
+      { question: "How is the monthly payment calculated?", answer: "Using the standard amortization formula: M = P × r(1+r)^n / ((1+r)^n - 1), where P is principal, r is monthly rate, and n is number of payments." },
+      { question: "Can I see the amortization schedule?", answer: "Yes. Click 'Show Amortization Schedule' to see a month-by-month breakdown of principal, interest, and remaining balance." },
+      { question: "Does it work for mortgages?", answer: "Yes. Enter your home loan amount, interest rate, and term (e.g., 30 years) to see your monthly mortgage payment." },
+    ],
+    content: [
+      { heading: "Loan & Mortgage Calculator", body: "Calculate monthly payments for any loan. Enter the loan amount, annual interest rate, and term in years. See your monthly payment, total cost, total interest, and a full month-by-month amortization schedule." },
+    ],
+    howTo: [
+      { name: "Enter loan details", text: "Input the loan amount, annual interest rate, and term in years." },
+      { name: "View results", text: "Monthly payment, total payment, and total interest are calculated instantly." },
+      { name: "View schedule", text: "Click Show Amortization Schedule for a month-by-month breakdown." },
+    ],
+  },
+
+  "color-palette-generator": {
+    seoTitle: "Free Color Palette Generator — Harmony-Based Color Schemes",
+    seoDescription: "Generate beautiful color palettes using color harmony rules. Complementary, analogous, triadic, tetradic, and monochromatic.",
+    faqs: [
+      { question: "What color harmonies are available?", answer: "Complementary, analogous, triadic, split-complementary, tetradic, and monochromatic — 6 harmony types based on color theory." },
+      { question: "How do I copy a color?", answer: "Click any color swatch to copy its HEX code to your clipboard. You can also see HSL values in the table below." },
+    ],
+    content: [
+      { heading: "Generate Color Palettes", body: "Pick a base color and choose a harmony type to generate a cohesive color palette. Uses color theory principles to create visually pleasing combinations. Copy HEX and HSL values with a click." },
+    ],
+    howTo: [
+      { name: "Pick base color", text: "Use the color picker or enter a HEX code." },
+      { name: "Choose harmony", text: "Select a color harmony type (complementary, analogous, etc.)." },
+      { name: "Copy colors", text: "Click any swatch to copy the HEX value to clipboard." },
+    ],
+  },
+
+  "pomodoro-timer": {
+    seoTitle: "Free Pomodoro Timer Online — Focus & Productivity Tool",
+    seoDescription: "Free Pomodoro timer with 25/5 minute work-break cycles. Track focus sessions and boost productivity.",
+    faqs: [
+      { question: "What is the Pomodoro Technique?", answer: "A time management method where you work in focused 25-minute sessions (pomodoros), separated by 5-minute short breaks. After 4 pomodoros, take a longer 15-minute break." },
+      { question: "Can I customize the timer?", answer: "The default times are 25 min work, 5 min short break, 15 min long break. Switch between modes at any time." },
+    ],
+    content: [
+      { heading: "Pomodoro Timer for Productivity", body: "Stay focused with the Pomodoro Technique. Work in 25-minute sprints with 5-minute breaks. The timer tracks your completed sessions. A visual progress ring shows time remaining." },
+    ],
+    howTo: [
+      { name: "Select mode", text: "Choose Focus (25 min), Short Break (5 min), or Long Break (15 min)." },
+      { name: "Start timer", text: "Click Start to begin the countdown." },
+      { name: "Track sessions", text: "Completed focus sessions are counted automatically." },
+    ],
+  },
+
+  "roman-numeral-converter": {
+    seoTitle: "Roman Numeral Converter — Decimal to Roman & Roman to Decimal",
+    seoDescription: "Convert between Roman numerals and decimal numbers. Bidirectional with a reference table. Free online tool.",
+    faqs: [
+      { question: "What range is supported?", answer: "Standard Roman numerals from 1 to 3999 (I to MMMCMXCIX). Numbers outside this range are not representable in standard Roman notation." },
+      { question: "Does it validate Roman numerals?", answer: "Yes. The converter checks that the Roman numeral follows correct notation rules (e.g., no IIII) by round-tripping through decimal." },
+    ],
+    content: [
+      { heading: "Convert Roman Numerals", body: "Type a decimal number to see its Roman representation, or enter a Roman numeral to get the decimal value. Both fields update in real-time. Includes a reference table for all basic Roman numeral symbols." },
+    ],
+    howTo: [
+      { name: "Enter a number", text: "Type a decimal number (1-3999) or a Roman numeral." },
+      { name: "See conversion", text: "The opposite field updates automatically." },
+      { name: "Use reference", text: "Refer to the table below for Roman numeral values." },
+    ],
+  },
+
+  "js-beautifier-minifier": {
+    seoTitle: "Free JS Beautifier & Minifier Online — Format or Compress JavaScript",
+    seoDescription: "Beautify or minify JavaScript online. Format messy code or compress for production. Free developer tool.",
+    faqs: [
+      { question: "What does Beautify do?", answer: "Beautify reformats your JavaScript with proper indentation, line breaks, and spacing, making it readable and maintainable." },
+      { question: "What does Minify do?", answer: "Minify removes comments and unnecessary whitespace to reduce file size, ideal for production deployment." },
+    ],
+    content: [
+      { heading: "JavaScript Beautifier & Minifier", body: "Paste JavaScript code and choose between Beautify (format for readability) or Minify (compress for production). The beautifier uses Prettier-style formatting." },
+    ],
+    howTo: [
+      { name: "Paste JavaScript", text: "Enter your JavaScript code in the input area." },
+      { name: "Choose mode", text: "Select Beautify to format or Minify to compress." },
+      { name: "Process and copy", text: "Click the button, then copy the result." },
+    ],
+  },
+
+  "sql-formatter": {
+    seoTitle: "Free SQL Formatter Online — Beautify SQL Queries",
+    seoDescription: "Format and beautify SQL queries online. Auto-indent, uppercase keywords, and clean up messy SQL. Free tool.",
+    faqs: [
+      { question: "Which SQL dialects are supported?", answer: "The formatter works with standard SQL syntax and is compatible with MySQL, PostgreSQL, SQLite, SQL Server, and most other SQL dialects." },
+      { question: "Does it uppercase keywords?", answer: "Yes. By default, SQL keywords like SELECT, FROM, WHERE are uppercased. You can toggle this option off." },
+    ],
+    content: [
+      { heading: "SQL Query Formatter", body: "Paste messy SQL and get clean, formatted output. Major clauses go on new lines, keywords are uppercased, and conditions are properly indented. Works with SELECT, INSERT, UPDATE, DELETE, and CREATE statements." },
+    ],
+    howTo: [
+      { name: "Paste SQL", text: "Enter your SQL query in the input area." },
+      { name: "Configure options", text: "Toggle uppercase keywords on or off." },
+      { name: "Copy result", text: "The formatted SQL appears in real-time. Click Copy to save." },
+    ],
+  },
+
+  "cron-expression-parser": {
+    seoTitle: "Free Cron Expression Parser — Explain Cron Jobs in Plain English",
+    seoDescription: "Parse cron expressions into human-readable descriptions. See next 5 run times. Free cron job tool.",
+    faqs: [
+      { question: "What is a cron expression?", answer: "A cron expression is a 5-field time specification (minute, hour, day-of-month, month, day-of-week) used to schedule recurring tasks on Unix-like systems." },
+      { question: "What do the 5 fields mean?", answer: "From left to right: minute (0-59), hour (0-23), day of month (1-31), month (1-12), day of week (0-6, 0=Sunday)." },
+    ],
+    content: [
+      { heading: "Understand Cron Expressions", body: "Enter a 5-field cron expression to see a human-readable description and the next 5 scheduled run times. Use presets for common schedules. Each field is explained visually." },
+    ],
+    howTo: [
+      { name: "Enter cron expression", text: "Type a 5-field cron expression or select a preset." },
+      { name: "Read description", text: "See a plain-English explanation of the schedule." },
+      { name: "Check next runs", text: "View the next 5 calculated run times." },
+    ],
+  },
+
+  "json-to-typescript": {
+    seoTitle: "Free JSON to TypeScript Converter — Generate Interfaces Online",
+    seoDescription: "Convert JSON to TypeScript interfaces instantly. Auto-detect types from JSON data. Free developer tool.",
+    faqs: [
+      { question: "How does it work?", answer: "Paste JSON data and the tool analyzes the structure, generating TypeScript interfaces with correct types for strings, numbers, booleans, arrays, and nested objects." },
+      { question: "Does it handle nested objects?", answer: "Yes. Nested objects generate separate interfaces that reference each other." },
+    ],
+    content: [
+      { heading: "JSON to TypeScript Interface Generator", body: "Paste any JSON object and get TypeScript interfaces generated automatically. The tool handles nested objects, arrays, and all primitive types. Customize the root interface name." },
+    ],
+    howTo: [
+      { name: "Paste JSON", text: "Enter your JSON data in the left panel." },
+      { name: "Set root name", text: "Optionally change the root interface name from 'Root'." },
+      { name: "Copy TypeScript", text: "The TypeScript interfaces appear instantly on the right. Click Copy." },
+    ],
+  },
+
+  "html-to-markdown": {
+    seoTitle: "Free HTML to Markdown Converter Online",
+    seoDescription: "Convert HTML to clean Markdown. Handles headings, links, lists, bold, italic, images, and code blocks.",
+    faqs: [
+      { question: "What HTML elements are supported?", answer: "Headings (h1-h6), paragraphs, bold, italic, links, images, ordered and unordered lists, code blocks, blockquotes, and horizontal rules." },
+      { question: "Does it handle complex HTML?", answer: "The converter handles most common HTML patterns. Very complex or nested HTML may need minor manual adjustments." },
+    ],
+    content: [
+      { heading: "Convert HTML to Markdown", body: "Paste HTML on the left and get clean Markdown on the right. The converter handles headings, formatting, links, images, lists, code blocks, and more. Great for migrating content to Markdown-based platforms." },
+    ],
+    howTo: [
+      { name: "Paste HTML", text: "Enter your HTML code in the left panel." },
+      { name: "Review Markdown", text: "The converted Markdown appears instantly on the right." },
+      { name: "Copy result", text: "Click Copy to save the Markdown to clipboard." },
+    ],
+  },
+
+  "px-to-rem-converter": {
+    seoTitle: "Free PX to REM Converter — Pixel to REM Calculator",
+    seoDescription: "Convert pixels to REM and REM to pixels instantly. Custom base font size. Reference table included. Free CSS tool.",
+    faqs: [
+      { question: "What is a REM unit?", answer: "REM stands for 'root em'. It's a CSS unit relative to the root element's font size. If the root is 16px, then 1rem = 16px." },
+      { question: "What base size should I use?", answer: "The default browser font size is 16px, which is the most common base. Change the base if your project uses a different root font size." },
+    ],
+    content: [
+      { heading: "PX to REM Converter", body: "Convert between pixels and REM units for responsive CSS. Set your base font size, enter a value, and see the conversion instantly. Includes a reference table with common pixel sizes and their REM equivalents." },
+    ],
+    howTo: [
+      { name: "Set base size", text: "Enter your root font size in pixels (default: 16px)." },
+      { name: "Enter value", text: "Type a pixel or REM value to convert." },
+      { name: "Use reference table", text: "See common PX-to-REM conversions at the bottom." },
+    ],
+  },
+
+  "json-path-tester": {
+    seoTitle: "Free JSONPath Tester Online — Query JSON Data with Paths",
+    seoDescription: "Test JSONPath expressions against JSON data in real-time. See matched values and paths. Free developer tool.",
+    faqs: [
+      { question: "What is JSONPath?", answer: "JSONPath is a query language for JSON, similar to XPath for XML. It lets you select specific values from complex JSON structures using path expressions like $.store.books[*].title." },
+      { question: "What expressions are supported?", answer: "Dot notation ($.key), bracket notation ($['key']), array access ([0]), and wildcards ([*]) are all supported." },
+    ],
+    content: [
+      { heading: "JSONPath Expression Tester", body: "Enter JSON data and a JSONPath expression to find matching values. Results show the full path and value of each match. Supports dot notation, array indexing, and wildcards." },
+    ],
+    howTo: [
+      { name: "Enter JSON", text: "Paste your JSON data in the input area." },
+      { name: "Write path expression", text: "Enter a JSONPath expression like $.store.books[*].title." },
+      { name: "View matches", text: "Matching values and their paths appear in real-time." },
+    ],
+  },
+
+  "find-and-replace": {
+    seoTitle: "Free Find and Replace Text Online — Regex Support",
+    seoDescription: "Find and replace text with regex support, case sensitivity, and whole word matching. Free text tool.",
+    faqs: [
+      { question: "Does it support regular expressions?", answer: "Yes. Enable the 'Use regex' option to use full JavaScript regular expression syntax in your search pattern." },
+      { question: "Is it case sensitive?", answer: "By default, searches are case-insensitive. Toggle 'Case sensitive' for exact matching." },
+    ],
+    content: [
+      { heading: "Find and Replace Text", body: "A powerful text find-and-replace tool. Enter search and replacement text, paste your content, and see all matches replaced instantly. Supports regex, case sensitivity, and whole word matching." },
+    ],
+    howTo: [
+      { name: "Enter search terms", text: "Type what to find and what to replace it with." },
+      { name: "Configure options", text: "Toggle case sensitivity, whole word, or regex mode." },
+      { name: "Paste text", text: "Enter your text and see the replacements applied." },
+    ],
+  },
+
+  "remove-line-breaks": {
+    seoTitle: "Free Remove Line Breaks Online — Join Lines Tool",
+    seoDescription: "Remove or convert line breaks. Join lines with commas, spaces, or merge into one line. Free text tool.",
+    faqs: [
+      { question: "What options are available?", answer: "Remove all line breaks, collapse to single spacing, double spacing, join with commas, or join with spaces." },
+      { question: "Does it preserve content?", answer: "Yes. Only line breaks are modified. Your text content remains unchanged." },
+    ],
+    content: [
+      { heading: "Remove Line Breaks Tool", body: "Clean up text by removing or converting line breaks. Choose from multiple modes: remove all, single line, double space, comma-separated, or space-separated. Live preview shows results instantly." },
+    ],
+    howTo: [
+      { name: "Select mode", text: "Choose how to handle line breaks (remove, single, comma, etc.)." },
+      { name: "Paste text", text: "Enter or paste your text with line breaks." },
+      { name: "Copy result", text: "The processed text appears on the right. Click Copy." },
+    ],
+  },
+
+  "text-to-ascii-art": {
+    seoTitle: "Free Text to ASCII Art Generator Online",
+    seoDescription: "Convert text to ASCII art banners. Generate large text art for READMEs, comments, and terminal displays.",
+    faqs: [
+      { question: "What characters are supported?", answer: "All uppercase letters (A-Z), digits (0-9), spaces, exclamation marks, and periods. Other characters display as spaces." },
+      { question: "Can I use it in code comments?", answer: "Yes! Copy the ASCII art and paste it into code comments, README files, or terminal displays." },
+    ],
+    content: [
+      { heading: "ASCII Art Text Generator", body: "Type text and see it rendered as large ASCII art using a block-character font. Great for README headers, code comments, terminal banners, and fun text displays." },
+    ],
+    howTo: [
+      { name: "Type text", text: "Enter up to 30 characters of text." },
+      { name: "Preview", text: "ASCII art renders instantly as you type." },
+      { name: "Copy", text: "Click Copy to save the ASCII art to clipboard." },
+    ],
+  },
+
+  "emoji-picker": {
+    seoTitle: "Free Emoji Picker — Browse & Copy Emojis by Category",
+    seoDescription: "Browse emojis by category and copy to clipboard with one click. Smileys, gestures, hearts, animals, food, and more.",
+    faqs: [
+      { question: "How do I copy an emoji?", answer: "Click any emoji to instantly copy it to your clipboard. A confirmation message appears briefly." },
+      { question: "What categories are available?", answer: "Smileys, Gestures, Hearts, Animals, Food, Travel, Objects, and Symbols — covering hundreds of popular emojis." },
+    ],
+    content: [
+      { heading: "Emoji Picker", body: "Browse and copy emojis organized by category. Click any emoji to copy it to your clipboard instantly. Filter by category or search to find the perfect emoji." },
+    ],
+    howTo: [
+      { name: "Browse categories", text: "Click category buttons to browse emojis by type." },
+      { name: "Click to copy", text: "Click any emoji to copy it to your clipboard." },
+      { name: "Search", text: "Type a category name to filter emojis." },
+    ],
+  },
+
+  "aspect-ratio-calculator": {
+    seoTitle: "Free Aspect Ratio Calculator — Calculate & Scale Dimensions",
+    seoDescription: "Calculate aspect ratio from width and height. Scale dimensions while maintaining the ratio. Common presets included.",
+    faqs: [
+      { question: "What is an aspect ratio?", answer: "An aspect ratio is the proportional relationship between width and height. Common ratios include 16:9 (widescreen), 4:3 (standard), and 1:1 (square)." },
+      { question: "How does scaling work?", answer: "Enter a new width or height, and the other dimension is calculated automatically to maintain the original aspect ratio." },
+    ],
+    content: [
+      { heading: "Aspect Ratio Calculator", body: "Enter width and height to find the simplified aspect ratio. Use the scaling section to resize while maintaining proportions. Includes presets for common ratios like 16:9, 4:3, and 1:1." },
+    ],
+    howTo: [
+      { name: "Enter dimensions", text: "Type width and height values." },
+      { name: "See ratio", text: "The simplified aspect ratio is calculated instantly." },
+      { name: "Scale", text: "Enter a new width or height to see the scaled dimension." },
+    ],
+  },
+
+  "meta-tag-generator": {
+    seoTitle: "Free Meta Tag Generator — HTML Meta Tags for SEO",
+    seoDescription: "Generate HTML meta tags for SEO including title, description, Open Graph, and Twitter Cards. Free SEO tool.",
+    faqs: [
+      { question: "What meta tags does it generate?", answer: "Title, description, keywords, author, robots, canonical URL, viewport, charset, Open Graph tags (og:title, og:description, og:image), and Twitter Card tags." },
+      { question: "How long should my title be?", answer: "Aim for 50-60 characters. The tool shows a character counter to help you stay within the ideal length." },
+      { question: "How long should my description be?", answer: "Aim for 150-160 characters. Longer descriptions may be truncated in search results." },
+    ],
+    content: [
+      { heading: "Generate Meta Tags for SEO", body: "Create properly formatted HTML meta tags for search engine optimization. Enter your page title, description, and other details. Get complete meta tags including Open Graph and Twitter Card tags, ready to copy into your HTML." },
+    ],
+    howTo: [
+      { name: "Fill in details", text: "Enter title, description, keywords, and other meta information." },
+      { name: "Preview tags", text: "Generated HTML meta tags appear in real-time." },
+      { name: "Copy tags", text: "Click Copy to save the meta tags to clipboard." },
+    ],
+  },
+
+  "open-graph-preview": {
+    seoTitle: "Free Open Graph Preview — See How Your Link Looks When Shared",
+    seoDescription: "Preview how your page appears when shared on Facebook, Twitter/X, and LinkedIn. Generate OG tags. Free tool.",
+    faqs: [
+      { question: "What is Open Graph?", answer: "Open Graph is a protocol that controls how your page appears when shared on social media. It defines the title, description, image, and URL shown in link previews." },
+      { question: "What platforms use Open Graph?", answer: "Facebook, LinkedIn, Twitter/X, Slack, Discord, WhatsApp, and many other platforms use Open Graph tags to generate link previews." },
+    ],
+    content: [
+      { heading: "Open Graph Preview Tool", body: "See exactly how your page will look when shared on Facebook, Twitter/X, and LinkedIn. Enter your OG data and see live previews for each platform. Generate the HTML tags to copy into your site." },
+    ],
+    howTo: [
+      { name: "Enter OG data", text: "Fill in title, description, URL, and image URL." },
+      { name: "Preview", text: "See live previews for Facebook and Twitter." },
+      { name: "Copy tags", text: "Copy the generated Open Graph HTML tags." },
+    ],
+  },
+
+  "robots-txt-generator": {
+    seoTitle: "Free Robots.txt Generator — Create Robots.txt for SEO",
+    seoDescription: "Generate robots.txt files for your website. Control search engine crawling with allow/disallow rules and sitemap.",
+    faqs: [
+      { question: "What is robots.txt?", answer: "robots.txt is a file in your website's root that tells search engine crawlers which pages they can and cannot access. It's a key part of technical SEO." },
+      { question: "Can I have multiple rules?", answer: "Yes. Add separate rules for different user-agents (e.g., Googlebot, Bingbot) with different allow/disallow paths." },
+    ],
+    content: [
+      { heading: "Robots.txt Generator", body: "Generate properly formatted robots.txt files for your website. Configure user-agent rules, allow/disallow paths, sitemap URL, and crawl delay. Add multiple rule sets for different crawlers." },
+    ],
+    howTo: [
+      { name: "Configure rules", text: "Set user-agent, allow, and disallow paths." },
+      { name: "Add sitemap", text: "Enter your sitemap URL." },
+      { name: "Copy robots.txt", text: "Copy the generated file and upload to your website root." },
+    ],
+  },
+
+  "favicon-generator": {
+    seoTitle: "Free Favicon Generator — Create Favicons from Text",
+    seoDescription: "Generate custom favicons from text with customizable colors and shapes. Download as SVG or PNG. Free tool.",
+    faqs: [
+      { question: "What sizes are generated?", answer: "The tool generates a 64x64 SVG that scales to any size. You can download as SVG (scalable) or PNG (64x64)." },
+      { question: "Can I use a logo instead of text?", answer: "This tool creates text-based favicons. Enter 1-3 characters to create a quick branded icon." },
+    ],
+    content: [
+      { heading: "Create Custom Favicons", body: "Generate favicons from text with customizable background color, text color, and shape (circle, rounded square, or square). Preview at multiple sizes and download as SVG or PNG." },
+    ],
+    howTo: [
+      { name: "Enter text", text: "Type 1-3 characters for your favicon." },
+      { name: "Customize", text: "Choose background color, text color, and shape." },
+      { name: "Download", text: "Click Download SVG or Download PNG." },
+    ],
+  },
+
+  "data-size-converter": {
+    seoTitle: "Free Data Size Converter — Bits, Bytes, KB, MB, GB, TB",
+    seoDescription: "Convert between data sizes: bits, bytes, KB, MB, GB, TB. SI and binary (IEC) units. Transfer time calculator.",
+    faqs: [
+      { question: "What's the difference between KB and KiB?", answer: "KB (kilobyte) = 1000 bytes (SI/decimal). KiB (kibibyte) = 1024 bytes (binary/IEC). Operating systems and storage devices use different standards." },
+      { question: "What does the transfer time show?", answer: "Enter a network speed in Mbps and the tool calculates how long it would take to transfer the specified amount of data." },
+    ],
+    content: [
+      { heading: "Data Size Converter", body: "Convert between all common data size units including bits, bytes, kilobytes, megabytes, gigabytes, terabytes, and petabytes. Supports both SI (decimal) and IEC (binary) units. Includes a network transfer time calculator." },
+    ],
+    howTo: [
+      { name: "Enter value", text: "Type a number and select the source unit." },
+      { name: "Select target", text: "Choose the unit to convert to." },
+      { name: "View all conversions", text: "See the full conversion table and transfer time." },
+    ],
+  },
 };

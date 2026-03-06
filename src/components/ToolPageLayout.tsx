@@ -114,6 +114,10 @@ export function ToolPageLayout({ tool, children }: ToolPageLayoutProps) {
                     <dd className="mt-2 text-gray-600 dark:text-gray-400">
                       {faq.answer}
                     </dd>
+                    {/* In-feed ad after 2nd FAQ for long pages */}
+                    {i === 1 && seo.faqs.length > 2 && (
+                      <AdSlot position="in-feed" className="mt-4" />
+                    )}
                   </div>
                 ))}
               </dl>
@@ -213,6 +217,9 @@ export function ToolPageLayout({ tool, children }: ToolPageLayoutProps) {
                 </ul>
               </div>
             )}
+
+            {/* Ad: Second sidebar ad — more below-fold revenue */}
+            <AdSlot position="footer" />
           </div>
         </aside>
       </div>
