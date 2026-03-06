@@ -7,7 +7,6 @@ export interface DiffLine {
 export function computeDiff(textA: string, textB: string): DiffLine[] {
   const linesA = textA.split("\n");
   const linesB = textB.split("\n");
-  const result: DiffLine[] = [];
 
   // Simple LCS-based diff
   const n = linesA.length;

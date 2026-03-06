@@ -1,6 +1,6 @@
 module.exports = {
   testEnvironment: "jsdom",
-  setupFilesAfterSetup: ["<rootDir>/jest.setup.ts"],
+  setupFilesAfterSetup: ["<rootDir>/jest.setup.ts"],  // TODO: rename to setupFilesAfterSetup when adding tests
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/src/$1",
   },
