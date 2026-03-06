@@ -266,6 +266,102 @@ export const tools: ToolDefinition[] = [
     keywords: ["password", "generate", "secure", "random", "strong"],
     relatedTools: ["uuid-generator", "hash-generator"],
   },
+
+  // ─── Calculators ─────────────────────────────────
+  {
+    slug: "percentage-calculator",
+    name: "Percentage Calculator",
+    description: "Calculate percentages instantly. What is X% of Y, percentage change, increase and decrease.",
+    category: "misc",
+    icon: "misc",
+    keywords: ["percentage", "calculator", "percent", "change", "increase", "decrease"],
+    relatedTools: ["tip-calculator", "bmi-calculator"],
+  },
+  {
+    slug: "age-calculator",
+    name: "Age Calculator",
+    description: "Calculate your exact age in years, months and days. Next birthday countdown included.",
+    category: "misc",
+    icon: "misc",
+    keywords: ["age", "calculator", "birthday", "date", "years", "months", "days"],
+    relatedTools: ["countdown-timer", "timestamp-converter"],
+  },
+  {
+    slug: "tip-calculator",
+    name: "Tip Calculator",
+    description: "Calculate tips and split bills easily. Custom tip percentage with per-person breakdown.",
+    category: "misc",
+    icon: "misc",
+    keywords: ["tip", "calculator", "bill", "split", "restaurant", "gratuity"],
+    relatedTools: ["percentage-calculator", "bmi-calculator"],
+  },
+  {
+    slug: "bmi-calculator",
+    name: "BMI Calculator",
+    description: "Calculate your Body Mass Index with metric or imperial units. Free BMI health tool.",
+    category: "misc",
+    icon: "misc",
+    keywords: ["bmi", "body", "mass", "index", "calculator", "health", "weight"],
+    relatedTools: ["percentage-calculator", "age-calculator"],
+  },
+  {
+    slug: "countdown-timer",
+    name: "Countdown Timer",
+    description: "Count down to any date and time. Live countdown with days, hours, minutes, seconds.",
+    category: "misc",
+    icon: "misc",
+    keywords: ["countdown", "timer", "date", "event", "clock", "days"],
+    relatedTools: ["age-calculator", "timestamp-converter"],
+  },
+  {
+    slug: "random-number-generator",
+    name: "Random Number Generator",
+    description: "Generate cryptographically random numbers with custom range and count. Free RNG tool.",
+    category: "misc",
+    icon: "misc",
+    keywords: ["random", "number", "generator", "rng", "dice", "range"],
+    relatedTools: ["password-generator", "uuid-generator"],
+  },
+
+  // ─── More Text Tools ─────────────────────────────
+  {
+    slug: "text-repeater",
+    name: "Text Repeater",
+    description: "Repeat any text multiple times with custom separator. Free text repeat tool.",
+    category: "text",
+    icon: "type",
+    keywords: ["repeat", "text", "duplicate", "copy", "multiply"],
+    relatedTools: ["word-counter", "lorem-ipsum-generator"],
+  },
+  {
+    slug: "binary-translator",
+    name: "Binary Translator",
+    description: "Convert text to binary, hexadecimal, or octal and back. Free encoding translator.",
+    category: "developer",
+    icon: "code",
+    keywords: ["binary", "translator", "text", "hex", "octal", "encode", "decode"],
+    relatedTools: ["base64-encoder", "number-base-converter"],
+  },
+  {
+    slug: "morse-code-translator",
+    name: "Morse Code Translator",
+    description: "Translate text to Morse code and Morse code to text instantly. Free online translator.",
+    category: "text",
+    icon: "type",
+    keywords: ["morse", "code", "translator", "encode", "decode", "dots", "dashes"],
+    relatedTools: ["binary-translator", "case-converter"],
+  },
+
+  // ─── More Developer Tools ────────────────────────
+  {
+    slug: "json-sorter",
+    name: "JSON Key Sorter",
+    description: "Sort JSON object keys alphabetically (A-Z or Z-A). Deep sorting for nested objects.",
+    category: "developer",
+    icon: "code",
+    keywords: ["json", "sort", "keys", "alphabetical", "order", "organize"],
+    relatedTools: ["json-formatter", "json-to-yaml"],
+  },
 ];
 
 /** Lookup a tool by slug. Returns undefined if not found. */

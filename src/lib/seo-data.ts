@@ -988,4 +988,298 @@ export const toolSeoData: Record<string, ToolSeoData> = {
       { name: "Copy and save", text: "Click Copy and store the password in your password manager." },
     ],
   },
+
+  // ─── Calculators ─────────────────────────────────
+  "percentage-calculator": {
+    seoTitle: "Percentage Calculator Online Free — Calculate Any Percentage",
+    seoDescription:
+      "Calculate percentages instantly: what is X% of Y, percentage change, increase and decrease. Free online percentage calculator.",
+    faqs: [
+      {
+        question: "How do I calculate a percentage?",
+        answer:
+          "Enter the percentage and the number. For example, to find 20% of 150, enter 20 as the percentage and 150 as the number. The result (30) appears instantly.",
+      },
+      {
+        question: "How do I calculate percentage change?",
+        answer:
+          "Enter the original value and the new value. The calculator shows the percentage increase or decrease. For example, from 100 to 130 is a 30% increase.",
+      },
+      {
+        question: "What is the percentage formula?",
+        answer:
+          "Percentage = (Part / Whole) × 100. To find X% of Y: Result = (X / 100) × Y. Percentage change = ((New - Old) / |Old|) × 100.",
+      },
+    ],
+    content: [
+      {
+        heading: "How to Calculate Percentages Online",
+        body: "Choose your calculation mode: 'What is X% of Y?' for basic percentage, 'X is what % of Y?' for finding the percentage, '% Change' for comparing two values, or 'Increase/Decrease by %' for adjusting values. Enter your numbers and get results instantly.",
+      },
+      {
+        heading: "Common Percentage Calculations",
+        body: "Sales tax: multiply price by tax rate percentage. Discounts: subtract the percentage of the original price. Tips: multiply bill by tip percentage. Grade percentages: divide score by total possible points and multiply by 100.",
+      },
+    ],
+    howTo: [
+      { name: "Choose calculation mode", text: "Select the type of percentage calculation you need from the five available modes." },
+      { name: "Enter your numbers", text: "Type in the values for your calculation in the input fields." },
+      { name: "Read the result", text: "The percentage result appears instantly below the input fields." },
+    ],
+  },
+
+  "age-calculator": {
+    seoTitle: "Age Calculator Online Free — Calculate Exact Age from Birthday",
+    seoDescription:
+      "Calculate your exact age in years, months, and days from your date of birth. Next birthday countdown included. Free online age calculator.",
+    faqs: [
+      {
+        question: "How do I calculate my exact age?",
+        answer:
+          "Enter your date of birth and the calculator instantly shows your age in years, months, and days, plus total days lived and days until your next birthday.",
+      },
+      {
+        question: "How many days have I been alive?",
+        answer:
+          "Enter your birthday and see the total number of days you've been alive. The calculator accounts for leap years and varying month lengths.",
+      },
+    ],
+    content: [
+      {
+        heading: "How to Calculate Your Age",
+        body: "Select your date of birth using the date picker. The calculator instantly computes your exact age broken down into years, months, and days. It also shows the total number of days you've lived and how many days remain until your next birthday.",
+      },
+    ],
+    howTo: [
+      { name: "Enter your birthday", text: "Use the date picker to select your date of birth." },
+      { name: "View your exact age", text: "See your age displayed in years, months, and days." },
+      { name: "Check birthday countdown", text: "See how many days until your next birthday." },
+    ],
+  },
+
+  "tip-calculator": {
+    seoTitle: "Tip Calculator Online Free — Calculate Tips & Split Bills",
+    seoDescription:
+      "Calculate tips and split bills easily. Choose tip percentage, split between friends, see per-person totals. Free tip calculator.",
+    faqs: [
+      {
+        question: "How do I calculate a tip?",
+        answer:
+          "Enter your bill amount and select a tip percentage (10%, 15%, 18%, 20%, or 25%). The calculator shows the tip amount and total. Optionally split the bill between multiple people.",
+      },
+      {
+        question: "What is a good tip percentage?",
+        answer:
+          "In the US, 15-20% is standard for restaurant service. 15% for adequate service, 18% for good service, and 20%+ for excellent service. Some regions and countries have different tipping customs.",
+      },
+    ],
+    content: [
+      {
+        heading: "How to Calculate a Tip",
+        body: "Enter your bill amount, select or adjust the tip percentage using the preset buttons or slider, and optionally set the number of people splitting the bill. The calculator instantly shows the tip amount, total bill, and per-person costs.",
+      },
+    ],
+    howTo: [
+      { name: "Enter bill amount", text: "Type in the total bill amount in dollars." },
+      { name: "Choose tip percentage", text: "Select a preset (10-25%) or use the slider for custom amounts." },
+      { name: "Split the bill", text: "Set the number of people to see per-person costs." },
+    ],
+  },
+
+  "bmi-calculator": {
+    seoTitle: "BMI Calculator Online Free — Body Mass Index Calculator",
+    seoDescription:
+      "Calculate your Body Mass Index (BMI) with metric or imperial units. See your BMI category instantly. Free online BMI calculator.",
+    faqs: [
+      {
+        question: "How do I calculate my BMI?",
+        answer:
+          "Enter your weight and height. The calculator divides your weight in kilograms by your height in meters squared (kg/m²). A BMI of 18.5-24.9 is considered normal weight.",
+      },
+      {
+        question: "What is a healthy BMI?",
+        answer:
+          "A BMI between 18.5 and 24.9 is considered normal weight. Below 18.5 is underweight, 25-29.9 is overweight, and 30 or above is classified as obese. BMI is a screening tool, not a diagnostic measure.",
+      },
+    ],
+    content: [
+      {
+        heading: "How to Calculate BMI",
+        body: "Choose metric (kg/cm) or imperial (lbs/ft) units. Enter your weight and height. The calculator instantly computes your BMI and shows which category you fall into: underweight, normal weight, overweight, or obese.",
+      },
+      {
+        heading: "Understanding BMI Categories",
+        body: "BMI is calculated as weight divided by height squared. While useful as a quick health screening tool, BMI doesn't account for muscle mass, bone density, or body composition. Athletes may have a high BMI due to muscle mass. Consult a healthcare provider for personalized health assessments.",
+      },
+    ],
+    howTo: [
+      { name: "Select units", text: "Choose between metric (kg/cm) or imperial (lbs/ft) measurement." },
+      { name: "Enter weight and height", text: "Input your weight and height in the chosen unit system." },
+      { name: "Read your BMI", text: "View your BMI score and weight category instantly." },
+    ],
+  },
+
+  "countdown-timer": {
+    seoTitle: "Countdown Timer Online Free — Count Down to Any Date",
+    seoDescription:
+      "Create a live countdown to any date and time. See days, hours, minutes, and seconds remaining. Free online countdown timer.",
+    faqs: [
+      {
+        question: "How do I create a countdown?",
+        answer:
+          "Enter a target date and optional time, and the countdown starts immediately showing days, hours, minutes, and seconds remaining in real time.",
+      },
+      {
+        question: "Does the countdown update in real time?",
+        answer:
+          "Yes. The countdown updates every second, showing a live count of days, hours, minutes, and seconds. It works even for past dates, showing elapsed time.",
+      },
+    ],
+    content: [
+      {
+        heading: "How to Use the Countdown Timer",
+        body: "Set your target date and time, optionally add an event name, and watch the live countdown. The timer shows days, hours, minutes, and seconds. If the date has passed, it shows elapsed time instead. Copy the countdown text to share with others.",
+      },
+    ],
+    howTo: [
+      { name: "Set the target date", text: "Use the date picker to choose when to count down to." },
+      { name: "Add a time (optional)", text: "Set a specific time for precise countdowns." },
+      { name: "Watch the live countdown", text: "The timer updates every second with days, hours, minutes, and seconds." },
+    ],
+  },
+
+  "random-number-generator": {
+    seoTitle: "Random Number Generator Online Free — True Random Numbers",
+    seoDescription:
+      "Generate cryptographically random numbers with custom range and count. No duplicates option. Free online random number generator.",
+    faqs: [
+      {
+        question: "How does the random number generator work?",
+        answer:
+          "It uses the Web Crypto API (crypto.getRandomValues) to generate true cryptographic randomness directly in your browser. This is more secure than Math.random().",
+      },
+      {
+        question: "Can I generate random numbers without duplicates?",
+        answer:
+          "Yes. Uncheck the 'Allow duplicates' option to ensure every generated number is unique within your set. The count will be limited to the size of your range.",
+      },
+    ],
+    content: [
+      {
+        heading: "How to Generate Random Numbers",
+        body: "Set your minimum and maximum values, choose how many numbers to generate, and click Generate. Use the 'Allow duplicates' toggle for lottery-style draws. Numbers are generated using cryptographic randomness for true unpredictability.",
+      },
+    ],
+    howTo: [
+      { name: "Set the range", text: "Enter minimum and maximum values for your random numbers." },
+      { name: "Choose count", text: "Set how many random numbers you want to generate." },
+      { name: "Click Generate", text: "Press Generate to create random numbers using the Web Crypto API." },
+    ],
+  },
+
+  "text-repeater": {
+    seoTitle: "Text Repeater Online Free — Repeat Text Multiple Times",
+    seoDescription:
+      "Repeat any text multiple times with custom separator. New line, space, comma or no separator. Free online text repeater tool.",
+    faqs: [
+      {
+        question: "How do I repeat text multiple times?",
+        answer:
+          "Type or paste your text, set the number of repetitions (up to 10,000), choose a separator (new line, space, comma, or none), and the repeated text appears instantly.",
+      },
+    ],
+    content: [
+      {
+        heading: "How to Repeat Text Online",
+        body: "Enter the text you want to repeat, set the repeat count, and choose your separator. The result updates in real time. Useful for generating test data, creating social media content, filling placeholder text, or repeating patterns for code testing.",
+      },
+    ],
+  },
+
+  "binary-translator": {
+    seoTitle: "Binary Translator Online Free — Text to Binary, Hex, Octal",
+    seoDescription:
+      "Convert text to binary, hexadecimal, or octal code and back. Free online binary translator with instant conversion.",
+    faqs: [
+      {
+        question: "How do I convert text to binary?",
+        answer:
+          "Type or paste your text and the tool instantly converts each character to its 8-bit binary representation. Switch to Hex or Octal mode for those encodings.",
+      },
+      {
+        question: "How do I convert binary back to text?",
+        answer:
+          "Switch to decode mode, paste binary digits separated by spaces (e.g., 01001000 01101001), and the tool converts them back to readable text.",
+      },
+    ],
+    content: [
+      {
+        heading: "How to Translate Text to Binary",
+        body: "Select your encoding format (binary, hexadecimal, or octal) and direction (encode or decode). Enter your input and the translation appears instantly. Binary uses base-2 (0s and 1s), hex uses base-16 (0-F), and octal uses base-8 (0-7).",
+      },
+    ],
+    howTo: [
+      { name: "Choose encoding", text: "Select binary, hexadecimal, or octal encoding format." },
+      { name: "Select direction", text: "Choose Text → Code to encode or Code → Text to decode." },
+      { name: "Enter input", text: "Type text or paste encoded values and see the result instantly." },
+    ],
+  },
+
+  "morse-code-translator": {
+    seoTitle: "Morse Code Translator Online Free — Text to Morse Code",
+    seoDescription:
+      "Translate text to Morse code and Morse code to text instantly. Supports letters, numbers, and punctuation. Free online translator.",
+    faqs: [
+      {
+        question: "How do I convert text to Morse code?",
+        answer:
+          "Type or paste your text and the tool instantly converts each character to its Morse code equivalent using dots (.) and dashes (-). Words are separated by forward slashes (/).",
+      },
+      {
+        question: "How do I read Morse code?",
+        answer:
+          "In Morse code, each letter is represented by dots and dashes. Letters are separated by spaces, words by slashes. For example, SOS is ... --- ... (three dots, three dashes, three dots).",
+      },
+    ],
+    content: [
+      {
+        heading: "How to Use the Morse Code Translator",
+        body: "Choose encode (Text → Morse) or decode (Morse → Text) mode. Enter your text to see the Morse code equivalent, or paste Morse code with spaces between letters and slashes between words. The translator supports all 26 letters, numbers 0-9, and common punctuation.",
+      },
+    ],
+    howTo: [
+      { name: "Choose direction", text: "Select Text → Morse to encode or Morse → Text to decode." },
+      { name: "Enter your text", text: "Type a message to see its Morse code, or paste Morse code to decode it." },
+      { name: "Copy the result", text: "Click Copy to copy the translated output to your clipboard." },
+    ],
+  },
+
+  "json-sorter": {
+    seoTitle: "JSON Key Sorter Online Free — Sort JSON Keys Alphabetically",
+    seoDescription:
+      "Sort JSON object keys alphabetically (A-Z or Z-A) with deep sorting for nested objects and arrays. Free online JSON sorter.",
+    faqs: [
+      {
+        question: "How do I sort JSON keys?",
+        answer:
+          "Paste your JSON into the input, choose ascending (A-Z) or descending (Z-A) order, and click Sort Keys. All keys are sorted recursively, including nested objects.",
+      },
+      {
+        question: "Does it sort nested objects?",
+        answer:
+          "Yes. The sorter recursively sorts keys at every level of nesting. Objects inside arrays are also sorted. Array order is preserved since arrays are ordered by index.",
+      },
+    ],
+    content: [
+      {
+        heading: "How to Sort JSON Keys Online",
+        body: "Paste your JSON data into the editor, select your sort direction (A-Z or Z-A), and click Sort Keys. The tool validates your JSON, sorts all object keys recursively at every nesting level, and outputs clean, formatted JSON ready to copy.",
+      },
+    ],
+    howTo: [
+      { name: "Paste your JSON", text: "Enter or paste JSON data into the input field." },
+      { name: "Choose sort order", text: "Select A → Z for ascending or Z → A for descending key order." },
+      { name: "Click Sort Keys", text: "Press the Sort Keys button to sort all keys recursively." },
+    ],
+  },
 };
