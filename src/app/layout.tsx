@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { AdSlot } from "@/components/AdSlot";
 import { AdSenseScript } from "@/components/AdSenseScript";
 import { AnalyticsScript } from "@/components/AnalyticsScript";
+import { ClarityScript } from "@/components/ClarityScript";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { siteConfig } from "@/lib/config";
 
@@ -64,6 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <AdSenseScript />
         <AnalyticsScript />
+        <ClarityScript />
       </head>
       <body className="flex min-h-screen flex-col bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
         <ThemeProvider>
