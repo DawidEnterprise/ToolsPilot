@@ -74,27 +74,3 @@ jobs:
           action: upload
           skip_app_build: true
           app_location: out
-
-  # ─── Deploy Infrastructure ──────────────────────────
-  deploy-infra:
-    name: Deploy Infrastructure
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-    runs-on: ubuntu-latest
-    environment: production
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Login to Azure
-        uses: azure/login@v2
-        with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-
-      - name: Deploy Bicep
-        uses: azure/arm-deploy@v2
-        with:
-          resourceGroupName: rg-toolpilot-prod
-          template: infra/main.bicep
-          parameters: infra/parameters.prod.json
-          failOnStdErr: false
