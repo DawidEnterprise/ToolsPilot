@@ -1,0 +1,79 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { AdSlot } from "@/components/AdSlot";
+import { AdSenseScript } from "@/components/AdSenseScript";
+import { AnalyticsScript } from "@/components/AnalyticsScript";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { siteConfig } from "@/lib/config";
+
+const inter = Inter({ subsets: ["latin"], display: "swap" });
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: `${siteConfig.name} — Free Online Tools for Everyone`,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  keywords: [
+    "online tools",
+    "free tools",
+    "developer tools",
+    "image converter",
+    "json formatter",
+    "file converter",
+  ],
+  authors: [{ name: siteConfig.name }],
+  openGraph: {
+    type: "website",
+    locale: siteConfig.locale,
+    url: siteConfig.url,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    siteName: siteConfig.name,
+    images: [{ url: siteConfig.ogImage, width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
+    creator: siteConfig.twitterHandle,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-snippet": -1, "max-image-preview": "large" },
+  },
+  alternates: { canonical: siteConfig.url },
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" }
+    ],
+    apple: "/favicon.svg",
+  },
+  manifest: "/manifest.json",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" className={inter.className} suppressHydrationWarning>
+      <head>
+        <AdSenseScript />
+        <AnalyticsScript />
+      </head>
+      <body className="flex min-h-screen flex-col bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+        <ThemeProvider>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          {/* Global anchor ad — sticky bottom, highest viewability */}
+          <AdSlot position="anchor" className="fixed bottom-0 left-0 right-0 z-40" />
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
