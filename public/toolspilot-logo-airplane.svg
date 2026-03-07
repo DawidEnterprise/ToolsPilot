@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <!-- Soft shadow for the airplane -->
+    <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#4a7b8c" flood-opacity="0.5"/>
+    </filter>
+    
+    <!-- Cloud Path Definition for reuse -->
+    <path id="cloud" d="M 80 80 Q 80 50 110 50 Q 125 25 150 40 Q 175 20 195 40 Q 215 35 220 60 Q 235 60 230 80 H 80 Z" />
+  </defs>
+
+  <!-- BACKGROUND: Minimal sky blue -->
+  <rect x="0" y="0" width="100%" height="100%" fill="#A6DEEC"/>
+
+  <!-- CLOUDS -->
+  <use href="#cloud" x="30" y="50" fill="#ffffff" opacity="0.9" />
+  <use href="#cloud" x="380" y="90" fill="#ffffff" opacity="0.8" transform="scale(0.8) translate(100, 0)" />
+  <use href="#cloud" x="30" y="320" fill="#ffffff" opacity="0.85" transform="scale(1.2) translate(0, -50)" />
+  <use href="#cloud" x="420" y="300" fill="#ffffff" opacity="0.95" />
+
+  <!-- Speed/Motion Lines in the Sky behind the plane -->
+  <g stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.6">
+    <line x1="40" y1="210" x2="110" y2="210" />
+    <line x1="80" y1="250" x2="140" y2="250" />
+    <line x1="60" y1="290" x2="160" y2="290" />
+    <line x1="100" y1="330" x2="180" y2="330" />
+  </g>
+
+  <!-- AIRPLANE & PILOT ASSEMBLY -->
+  <!-- Shifted slightly to center the composition within the 600x500 container -->
+  <g transform="translate(60, 45)" filter="url(#soft-shadow)">
+    
+    <!-- BACK TAIL WING -->
+    <ellipse cx="110" cy="275" rx="35" ry="12" fill="#D24A3E" />
+
+    <!-- PILOT'S RED SCARF BLOWING IN THE WIND -->
+    <path d="M 230 195 C 180 185, 140 210, 90 230 C 130 200, 180 170, 230 190 Z" fill="#D24A3E"/>
+    <path d="M 230 195 C 190 210, 130 235, 70 235 C 130 220, 180 200, 230 195 Z" fill="#E85D4F"/>
+
+    <!-- AIRPLANE MAIN FUSELAGE -->
+    <!-- Continuous crisp path for a smooth, rounded airplane body -->
+    <path d="M 130 230 L 410 230 A 40 40 0 0 1 410 310 L 130 310 Q 70 310 70 270 Q 70 230 130 230 Z" fill="#E85D4F"/>
+    
+    <!-- AIRPLANE TAIL FIN -->
+    <path d="M 160 240 L 105 125 A 15 15 0 0 1 128 118 L 195 230 Z" fill="#E85D4F"/>
+
+    <!-- TAIL FIN SMILEY LOGO DECAL -->
+    <circle cx="145" cy="180" r="14" fill="none" stroke="#F4B248" stroke-width="3"/>
+    <circle cx="139" cy="176" r="2.5" fill="#F4B248"/>
+    <circle cx="151" cy="176" r="2.5" fill="#F4B248"/>
+    <path d="M 137 183 Q 145 192 153 183" fill="none" stroke="#F4B248" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- COCKPIT INTERIOR (Shadow hole) -->
+    <path d="M 230 230 C 230 260, 310 260, 310 230 Z" fill="#7A2219"/>
+
+    <!-- THE PILOT -->
+    <!-- Head Base -->
+    <circle cx="270" cy="160" r="38" fill="#FCE4C8"/>
+    
+    <!-- Blue Pilot Shirt Body -->
+    <rect x="245" y="180" width="50" height="55" fill="#4B95C3"/>
+
+    <!-- Black Swept-Back Hair -->
+    <path d="M 235 155 A 35 35 0 0 1 306 155 Q 270 140 235 155 Z" fill="#2C3E50"/>
+
+    <!-- Aviator Leather Hat -->
+    <!-- Top Dome -->
+    <path d="M 235 155 A 35 35 0 0 1 305 155" fill="none" stroke="#8B5736" stroke-width="16" stroke-linecap="round"/>
+    <!-- Ear Flaps -->
+    <line x1="240" y1="160" x2="240" y2="205" stroke="#8B5736" stroke-width="15" stroke-linecap="round"/>
+    <line x1="300" y1="160" x2="300" y2="205" stroke="#8B5736" stroke-width="15" stroke-linecap="round"/>
+    <!-- Yellow Inner Flap Linings -->
+    <line x1="242" y1="170" x2="242" y2="200" stroke="#E0A96D" stroke-width="6" stroke-linecap="round"/>
+    <line x1="298" y1="170" x2="298" y2="200" stroke="#E0A96D" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Red Aviator Goggles (Pushed up on forehead) -->
+    <rect x="242" y="112" width="24" height="20" rx="6" fill="#2C3E50" stroke="#E85D4F" stroke-width="4"/>
+    <rect x="274" y="112" width="24" height="20" rx="6" fill="#2C3E50" stroke="#E85D4F" stroke-width="4"/>
+    <line x1="266" y1="122" x2="274" y2="122" stroke="#E85D4F" stroke-width="4"/> <!-- Bridge -->
+    <!-- Goggle Reflections -->
+    <line x1="247" y1="118" x2="259" y2="128" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <line x1="279" y1="118" x2="291" y2="128" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Happy Eyes (Arches) -->
+    <path d="M 248 160 Q 254 152 260 160" fill="none" stroke="#2C3E50" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 280 160 Q 286 152 292 160" fill="none" stroke="#2C3E50" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Big Open Laughing Mouth -->
+    <path d="M 255 170 C 255 195, 285 195, 285 170 Z" fill="#7A2219"/>
+    <!-- Tongue / Teeth -->
+    <path d="M 260 180 Q 270 176 280 180 C 280 188, 260 188, 260 180 Z" fill="#E85D4F"/>
+
+    <!-- Red Neck Scarf Wrap -->
+    <rect x="242" y="185" width="56" height="15" rx="7" fill="#E85D4F" transform="rotate(-5 270 190)"/>
+
+    <!-- FRONT EDGE OF COCKPIT CAPPING -->
+    <!-- This gives the illusion the pilot is sitting 'inside' -->
+    <path d="M 230 230 C 230 245, 310 245, 310 230 Z" fill="#E85D4F"/>
+    <!-- Yellow edge trim on cockpit -->
+    <path d="M 230 230 C 230 245, 310 245, 310 230" fill="none" stroke="#F4B248" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- PILOT ARM & STEERING WHEEL -->
+    <!-- Arm reaching forward -->
+    <path d="M 285 200 L 310 220 L 325 203" fill="none" stroke="#8B5736" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Hand -->
+    <circle cx="325" cy="203" r="8" fill="#FCE4C8"/>
+    
+    <!-- Steering Stick & Wheel -->
+    <line x1="335" y1="210" x2="330" y2="242" stroke="#F4B248" stroke-width="6" stroke-linecap="round"/>
+    <ellipse cx="335" cy="195" rx="9" ry="20" fill="none" stroke="#F4B248" stroke-width="6"/>
+
+
+    <!-- YELLOW FRONT NOSE CONE -->
+    <path d="M 380 230 L 410 230 A 40 40 0 0 1 410 310 L 380 310 Z" fill="#F4B248"/>
+
+    <!-- FUSELAGE RIVET DETAILS -->
+    <line x1="120" y1="270" x2="380" y2="270" stroke="#C44336" stroke-width="4" stroke-linecap="round" stroke-dasharray="0, 16"/>
+
+    <!-- MAIN YELLOW AIRPLANE WING -->
+    <!-- Positioned over the fuselage -->
+    <path d="M 240 275 L 375 275 L 325 350 L 195 350 Z" fill="#F4B248" stroke="#F4B248" stroke-width="18" stroke-linejoin="round"/>
+
+    <!-- PROPELLER SYSTEM -->
+    <!-- Spinning Blades -->
+    <path d="M 410 270 Q 395 190 410 170 Q 425 190 410 270 Z" fill="#FFF5D1" stroke="#F4B248" stroke-width="3"/>
+    <path d="M 410 270 Q 395 350 410 370 Q 425 350 410 270 Z" fill="#FFF5D1" stroke="#F4B248" stroke-width="3"/>
+    
+    <!-- Spinner/Cone Hub -->
+    <ellipse cx="410" cy="270" rx="12" ry="28" fill="#2C3E50"/>
+    <line x1="418" y1="250" x2="418" y2="290" stroke="#4a637a" stroke-width="4" stroke-linecap="round"/>
+
+  </g>
+</svg>

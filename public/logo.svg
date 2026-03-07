@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Main body: Friendly blue robot/pilot head -->
+  <circle cx="100" cy="100" r="80" fill="#69c1f0" stroke="#005A9C" stroke-width="6"/>
+  
+  <!-- Pilot Goggles -->
+  <rect x="35" y="70" width="130" height="40" rx="15" fill="#ffffff" stroke="#005A9C" stroke-width="6"/>
+  <rect x="95" y="70" width="10" height="40" fill="#005A9C"/>
+  <circle cx="65" cy="90" r="10" fill="#005A9C"/>
+  <circle cx="135" cy="90" r="10" fill="#005A9C"/>
+
+  <!-- Friendly Smile -->
+  <path d="M 60 130 Q 100 160 140 130" fill="none" stroke="#005A9C" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Wrench "ears" / features -->
+  <path d="M 15 100 L 25 100 L 25 120 L 15 120 Z" fill="#B0BEC5" stroke="#005A9C" stroke-width="4"/>
+  <path d="M 185 100 L 175 100 L 175 120 L 185 120 Z" fill="#B0BEC5" stroke="#005A9C" stroke-width="4"/>
+  
+  <!-- Antenna (Tool-like) -->
+  <rect x="95" y="5" width="10" height="20" fill="#B0BEC5" stroke="#005A9C" stroke-width="4"/>
+  <circle cx="100" cy="15" r="12" fill="#FFC107" stroke="#005A9C" stroke-width="4"/>
+</svg>

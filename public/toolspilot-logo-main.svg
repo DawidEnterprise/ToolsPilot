@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Drop shadow for the pilot popping out -->
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND: The "Tools" Gear -->
+  <g fill="#1E293B">
+    <circle cx="250" cy="250" r="190" />
+    <rect x="220" y="40" width="60" height="420" rx="15" />
+    <rect x="220" y="40" width="60" height="420" rx="15" transform="rotate(30 250 250)" />
+    <rect x="220" y="40" width="60" height="420" rx="15" transform="rotate(60 250 250)" />
+    <rect x="220" y="40" width="60" height="420" rx="15" transform="rotate(90 250 250)" />
+    <rect x="220" y="40" width="60" height="420" rx="15" transform="rotate(120 250 250)" />
+    <rect x="220" y="40" width="60" height="420" rx="15" transform="rotate(150 250 250)" />
+  </g>
+  
+  <!-- Outer glowing rim of the gear -->
+  <circle cx="250" cy="250" r="160" fill="#2563EB" />
+  <circle cx="250" cy="250" r="140" fill="#60A5FA" />
+  <circle cx="250" cy="250" r="120" fill="#93C5FD" opacity="0.3" />
+
+  <!-- FOREGROUND: The Friendly Cartoon Pilot -->
+  <g filter="url(#drop-shadow)">
+    <!-- Body / Leather Jacket -->
+    <path d="M 120 450 Q 250 320 380 450 Z" fill="#78350F" stroke="#451A03" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M 170 450 Q 250 350 330 450 Z" fill="#92400E" />
+
+    <!-- Red Scarf wrapping around the neck -->
+    <path d="M 250 380 Q 320 380 340 340 Q 330 310 250 330 Q 170 310 160 340 Q 180 380 250 380 Z" fill="#EF4444" stroke="#7F1D1D" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M 230 380 Q 220 460 170 470 Q 150 450 190 380 Z" fill="#DC2626" stroke="#7F1D1D" stroke-width="6"/>
+
+    <!-- Back of the Leather Aviator Hat -->
+    <circle cx="250" cy="210" r="95" fill="#8B4513" stroke="#451A03" stroke-width="6"/>
+
+    <!-- Ear Flaps -->
+    <rect x="150" y="200" width="45" height="120" rx="20" fill="#8B4513" stroke="#451A03" stroke-width="6"/>
+    <rect x="305" y="200" width="45" height="120" rx="20" fill="#8B4513" stroke="#451A03" stroke-width="6"/>
+    
+    <!-- Inner warm wool lining of the ear flaps -->
+    <rect x="158" y="210" width="29" height="100" rx="14" fill="#FDE68A" />
+    <rect x="313" y="210" width="29" height="100" rx="14" fill="#FDE68A" />
+
+    <!-- Face Shape -->
+    <circle cx="250" cy="240" r="85" fill="#FFEDD5" stroke="#451A03" stroke-width="4"/>
+
+    <!-- Aviator Goggles (Pushed up on forehead) -->
+    <!-- Goggle Strap -->
+    <rect x="145" y="145" width="210" height="25" fill="#451A03" />
+    
+    <!-- Left Goggle Lens Rim -->
+    <circle cx="205" cy="140" r="45" fill="#F8FAFC" stroke="#64748B" stroke-width="10" />
+    <!-- Right Goggle Lens Rim -->
+    <circle cx="295" cy="140" r="45" fill="#F8FAFC" stroke="#64748B" stroke-width="10" />
+    
+    <!-- Goggle Bridge -->
+    <rect x="240" y="130" width="20" height="15" rx="5" fill="#64748B" />
+
+    <!-- Lenses with reflection -->
+    <circle cx="205" cy="140" r="35" fill="#BAE6FD" />
+    <circle cx="295" cy="140" r="35" fill="#BAE6FD" />
+    <path d="M 185 120 A 30 30 0 0 1 215 115" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" />
+    <path d="M 275 120 A 30 30 0 0 1 305 115" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" />
+
+    <!-- Eyes (Big, friendly, looking forward) -->
+    <circle cx="215" cy="235" r="14" fill="#0F172A" />
+    <circle cx="285" cy="235" r="14" fill="#0F172A" />
+    <circle cx="210" cy="230" r="5" fill="#FFFFFF" />
+    <circle cx="280" cy="230" r="5" fill="#FFFFFF" />
+
+    <!-- Cute button nose -->
+    <ellipse cx="250" cy="260" rx="12" ry="8" fill="#FDBA74" />
+
+    <!-- Rosy Cheeks -->
+    <circle cx="190" cy="265" r="15" fill="#FCA5A5" opacity="0.6" />
+    <circle cx="310" cy="265" r="15" fill="#FCA5A5" opacity="0.6" />
+
+    <!-- Big Happy Smile -->
+    <path d="M 215 285 Q 250 325 285 285" fill="none" stroke="#451A03" stroke-width="7" stroke-linecap="round" />
+    
+    <!-- Little smile dimples -->
+    <path d="M 205 280 Q 210 285 215 285" fill="none" stroke="#451A03" stroke-width="4" stroke-linecap="round" />
+    <path d="M 295 280 Q 290 285 285 285" fill="none" stroke="#451A03" stroke-width="4" stroke-linecap="round" />
+  </g>
+</svg>
