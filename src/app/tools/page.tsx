@@ -1,24 +1,34 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { tools } from "@/lib/registry";
 import { CATEGORIES } from "@/lib/types";
 import { ToolCard } from "@/components/ToolCard";
 import { AdSlot } from "@/components/AdSlot";
 
 export const metadata: Metadata = {
-  title: "All Tools",
-  description: "Browse our complete collection of free online tools for developers, designers and marketers.",
+  title: "All Free Online Tools — Developer, Image, Text & SEO Tools | ToolsPilot",
+  description:
+    "Browse 163 free online tools: JSON formatter, image converter, PDF tools, calculators, SEO tools, and more. No signup required. 100% browser-based.",
+  keywords:
+    "free online tools, developer tools, image converter, json formatter, pdf converter, calculator online, text tools, seo tools, password generator, qr code generator",
 };
 
 export default function ToolsPage() {
+  const published = tools.filter((t) => !t.comingSoon);
+  const comingSoonCount = tools.filter((t) => t.comingSoon).length;
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
       <h1 className="section-heading">All Tools</h1>
       <p className="mt-2 text-gray-500 dark:text-gray-400">
-        {tools.length} tools across {CATEGORIES.length} categories
+        {published.length} tools available across {CATEGORIES.length} categories
+        {comingSoonCount > 0 && (
+          <> · <Link href="/tools-list" className="text-brand-600 hover:underline dark:text-brand-400">{comingSoonCount} more coming soon →</Link></>
+        )}
       </p>
 
       {CATEGORIES.map((cat, idx) => {
-        const catTools = tools.filter((t) => t.category === cat.id);
+        const catTools = published.filter((t) => t.category === cat.id);
         if (catTools.length === 0) return null;
         return (
           <div key={cat.id}>

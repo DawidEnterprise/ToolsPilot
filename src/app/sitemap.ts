@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: SITE_URL, lastModified: now, changeFrequency: "daily", priority: 1.0 },
     { url: `${SITE_URL}/tools`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
+    { url: `${SITE_URL}/tools-list`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
     { url: `${SITE_URL}/categories`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE_URL}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.3 },
     { url: `${SITE_URL}/roadmap`, lastModified: now, changeFrequency: "monthly", priority: 0.3 },
@@ -24,12 +25,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const toolPages: MetadataRoute.Sitemap = tools.map((tool) => ({
-    url: `${SITE_URL}/tools/${tool.slug}`,
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: tool.comingSoon ? 0.4 : 0.8,
-  }));
+  const toolPages: MetadataRoute.Sitemap = tools
+    .filter((tool) => !tool.comingSoon)
+    .map((tool) => ({
+      url: `${SITE_URL}/tools/${tool.slug}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    }));
 
   return [...staticPages, ...categoryPages, ...toolPages];
 }
