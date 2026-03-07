@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { tools } from "@/lib/registry";
 import { CATEGORIES } from "@/lib/types";
 import { ToolCard } from "@/components/ToolCard";
@@ -15,16 +14,12 @@ export const metadata: Metadata = {
 
 export default function ToolsPage() {
   const published = tools.filter((t) => !t.comingSoon);
-  const comingSoonCount = tools.filter((t) => t.comingSoon).length;
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
       <h1 className="section-heading">All Tools</h1>
       <p className="mt-2 text-gray-500 dark:text-gray-400">
-        {published.length} tools available across {CATEGORIES.length} categories
-        {comingSoonCount > 0 && (
-          <> · <Link href="/tools-list" className="text-brand-600 hover:underline dark:text-brand-400">{comingSoonCount} more coming soon →</Link></>
-        )}
+        {published.length} tools across {CATEGORIES.length} categories
       </p>
 
       {CATEGORIES.map((cat, idx) => {
