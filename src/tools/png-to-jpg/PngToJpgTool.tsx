@@ -109,9 +109,19 @@ export function PngToJpgTool() {
             <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
               {results.length} file{results.length > 1 ? "s" : ""} converted
             </p>
-            <button onClick={handleReset} className="text-xs text-gray-500 hover:text-red-500 transition-colors">
-              Clear all
-            </button>
+            <div className="flex items-center gap-3">
+              {results.length > 1 && (
+                <button
+                  onClick={() => results.forEach((r) => downloadBlob(r.result.blob, r.name))}
+                  className="btn-primary px-3 py-1.5 text-xs"
+                >
+                  Save All
+                </button>
+              )}
+              <button onClick={handleReset} className="text-xs text-gray-500 hover:text-red-500 transition-colors">
+                Clear all
+              </button>
+            </div>
           </div>
 
           {results.map((r, i) => {

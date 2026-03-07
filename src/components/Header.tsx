@@ -14,8 +14,8 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-gray-200/80 bg-white/90 backdrop-blur-lg dark:border-gray-800 dark:bg-gray-950/90">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 text-xl font-bold text-brand-600">
-          <Image src="/favicon-32.png" alt="" width={28} height={28} className="rounded" />
+        <Link href="/" className="flex items-center gap-2.5 text-xl font-bold text-brand-600">
+          <Image src="/apple-touch-icon.png" alt="" width={40} height={40} className="rounded-lg" />
           {siteConfig.name}
         </Link>
 

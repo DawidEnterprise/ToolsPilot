@@ -3,6 +3,7 @@ import type { ToolDefinition } from "@/lib/types";
 import { getCategoryMeta } from "@/lib/types";
 import { AdSlot } from "./AdSlot";
 import { getToolBySlug } from "@/lib/registry";
+import { getUsageHint } from "@/lib/usage-hints";
 
 interface ToolPageLayoutProps {
   tool: ToolDefinition;
@@ -11,6 +12,7 @@ interface ToolPageLayoutProps {
 
 export function ToolPageLayout({ tool, children }: ToolPageLayoutProps) {
   const category = getCategoryMeta(tool.category);
+  const hint = getUsageHint(tool.slug);
 
   const relatedToolDefs = (tool.relatedTools ?? [])
     .map((slug) => getToolBySlug(slug))
@@ -50,9 +52,14 @@ export function ToolPageLayout({ tool, children }: ToolPageLayoutProps) {
         <div className="mx-auto w-full max-w-7xl px-4 pt-5 pb-2 sm:px-6 lg:px-8">
           <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">{tool.name}</h1>
           <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">{tool.description}</p>
+          {hint && (
+            <p className="mt-2 text-xs text-gray-400 dark:text-gray-500">
+              <span className="font-medium text-gray-500 dark:text-gray-400">How to use:</span> {hint}
+            </p>
+          )}
         </div>
 
-        <AdSlot position="tool-top" className="mx-auto w-full max-w-7xl px-4 py-2 sm:px-6 lg:px-8" />
+        <AdSlot position="tool-top" className="mx-auto w-full max-w-7xl px-4 py-3 sm:px-6 lg:px-8" />
 
         {/* Tool body + optional sidebar ad on xl screens */}
         <div className="flex-1 mx-auto w-full max-w-7xl px-4 pb-6 sm:px-6 lg:px-8 xl:flex xl:gap-8">

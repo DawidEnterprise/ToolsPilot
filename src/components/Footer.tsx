@@ -9,8 +9,8 @@ export function Footer() {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 text-lg font-bold text-brand-600">
-              <img src="/favicon-32.png" alt="" width={24} height={24} className="rounded" />
+            <Link href="/" className="flex items-center gap-2.5 text-lg font-bold text-brand-600">
+              <img src="/apple-touch-icon.png" alt="" width={36} height={36} className="rounded-lg" />
               {siteConfig.name}
             </Link>
             <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">

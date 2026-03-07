@@ -29,6 +29,19 @@ export function WebpToPngTool() {
     <div className="space-y-4">
       <FileDropZone accept="image/webp,.webp" onFiles={handleFiles} multiple label="Drop WebP images" maxSizeMB={20} />
       {processing && <p className="text-sm text-gray-500">Converting...</p>}
+      {results.length > 1 && (
+        <div className="flex items-center justify-between">
+          <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
+            {results.length} files converted
+          </p>
+          <button
+            onClick={() => results.forEach((r) => downloadBlob(r.blob, r.name))}
+            className="btn-primary px-3 py-1.5 text-xs"
+          >
+            Save All
+          </button>
+        </div>
+      )}
       {results.map((r, i) => (
         <div key={i} className="flex items-center gap-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-3">
           <img src={r.url} alt="" className="h-12 w-12 rounded object-cover" />
