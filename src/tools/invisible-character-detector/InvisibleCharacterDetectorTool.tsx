@@ -14,7 +14,7 @@ export function InvisibleCharacterDetectorTool() {
 
   return (
     <div className="space-y-4">
-      <textarea className="input-field h-[16rem] font-mono" placeholder="Paste text to scan for hidden characters..." value={input} onChange={e => setInput(e.target.value)} />
+      <textarea className="input-field tool-panel font-mono" placeholder="Paste text to scan for hidden characters..." value={input} onChange={e => setInput(e.target.value)} />
       <div className="rounded-lg bg-gray-50 dark:bg-gray-800 p-4 text-sm">
         <p className="text-gray-700 dark:text-gray-300">{input.length} characters total, <strong className={found.length > 0 ? "text-red-600" : "text-green-600"}>{found.length} hidden character{found.length !== 1 ? "s" : ""} found</strong></p>
         {found.length > 0 && (

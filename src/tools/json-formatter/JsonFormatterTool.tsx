@@ -93,7 +93,7 @@ export function JsonFormatterTool() {
             Paste your JSON
           </label>
           <textarea
-            className="textarea-field h-[28rem]"
+            className="textarea-field tool-panel"
             placeholder='{"paste": "your JSON here"}'
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -105,7 +105,7 @@ export function JsonFormatterTool() {
             {mode === "format" ? "Formatted Output" : "Minified Output"}
           </label>
           <textarea
-            className="textarea-field h-[28rem] bg-gray-50 dark:bg-gray-800"
+            className="textarea-field tool-panel bg-gray-50 dark:bg-gray-800"
             value={output}
             readOnly
             placeholder="Output will appear here automatically…"

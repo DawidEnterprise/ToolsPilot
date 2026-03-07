@@ -65,7 +65,7 @@ export function UrlEncoderTool() {
             {mode === "encode" ? "Plain URL / Text" : "Encoded URL"}
           </label>
           <textarea
-            className="textarea-field h-[20rem]"
+            className="textarea-field tool-panel"
             placeholder={mode === "encode" ? "Paste a URL or text to encode…" : "Paste URL-encoded string…"}
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -77,7 +77,7 @@ export function UrlEncoderTool() {
             {mode === "encode" ? "Encoded Output" : "Decoded Output"}
           </label>
           <textarea
-            className="textarea-field h-[20rem] bg-gray-50 dark:bg-gray-800"
+            className="textarea-field tool-panel bg-gray-50 dark:bg-gray-800"
             value={output}
             readOnly
             placeholder="Result appears here automatically…"

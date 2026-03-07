@@ -24,13 +24,23 @@ export function SvgOptimizerTool() {
 
   return (
     <div className="space-y-4">
-      <textarea className="input-field min-h-[200px] font-mono text-sm" placeholder="Paste SVG markup here..." value={input} onChange={e => setInput(e.target.value)} />
-      <button onClick={optimize} className="btn-primary text-sm">Optimize SVG</button>
-      {output && (
-        <p className="text-xs text-gray-500">{origSize} → {optSize} bytes ({saved}% saved)</p>
-      )}
-      <textarea className="input-field min-h-[200px] font-mono text-sm bg-gray-50 dark:bg-gray-800" readOnly value={output} />
-      {output && <button onClick={() => navigator.clipboard.writeText(output)} className="btn-secondary text-sm">Copy</button>}
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <div>
+          <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">SVG Input</label>
+          <textarea className="input-field tool-panel font-mono text-sm" placeholder="Paste SVG markup here..." value={input} onChange={e => setInput(e.target.value)} />
+        </div>
+        <div>
+          <div className="mb-1 flex items-center justify-between">
+            <label className="block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">Optimized Output</label>
+            {output && <button onClick={() => navigator.clipboard.writeText(output)} className="text-xs text-brand-500 hover:text-brand-600">Copy</button>}
+          </div>
+          <textarea className="input-field tool-panel font-mono text-sm bg-gray-50 dark:bg-gray-800" readOnly value={output} />
+        </div>
+      </div>
+      <div className="flex items-center gap-4">
+        <button onClick={optimize} className="btn-primary text-sm">Optimize SVG</button>
+        {output && <p className="text-xs text-gray-500">{origSize} → {optSize} bytes ({saved}% saved)</p>}
+      </div>
     </div>
   );
 }

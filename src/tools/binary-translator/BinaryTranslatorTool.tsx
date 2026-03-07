@@ -65,7 +65,7 @@ export function BinaryTranslatorTool() {
             {direction === "encode" ? "Text Input" : `${mode.charAt(0).toUpperCase() + mode.slice(1)} Input`}
           </label>
           <textarea
-            className="input-field h-[20rem] font-mono"
+            className="input-field tool-panel font-mono"
             placeholder={direction === "encode" ? "Enter text here..." : `Enter ${mode} values...`}
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -79,7 +79,7 @@ export function BinaryTranslatorTool() {
             </label>
             {result && <CopyButton text={result} />}
           </div>
-          <pre className="h-[20rem] overflow-auto rounded-lg border border-gray-200 bg-gray-50 p-3 font-mono text-sm whitespace-pre-wrap break-all dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100">
+          <pre className="tool-panel overflow-auto rounded-lg border border-gray-200 bg-gray-50 p-3 font-mono text-sm whitespace-pre-wrap break-all dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100">
             {result || <span className="text-gray-400">Output will appear here...</span>}
           </pre>
         </div>

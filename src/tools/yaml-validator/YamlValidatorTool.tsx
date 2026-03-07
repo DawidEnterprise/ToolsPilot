@@ -17,7 +17,7 @@ export function YamlValidatorTool() {
 
   return (
     <div className="space-y-4">
-      <textarea className="input-field min-h-[200px] font-mono" placeholder="Paste your YAML here..." value={input} onChange={e => { setInput(e.target.value); setResult(null); }} />
+      <textarea className="input-field tool-panel font-mono" placeholder="Paste your YAML here..." value={input} onChange={e => { setInput(e.target.value); setResult(null); }} />
       <button onClick={validate} className="btn-primary text-sm">Validate YAML</button>
       {result && (
         <div className={"rounded-lg p-4 text-sm " + (result.valid ? "bg-green-50 text-green-700 border border-green-200 dark:bg-green-950 dark:text-green-400 dark:border-green-800" : "bg-red-50 text-red-700 border border-red-200 dark:bg-red-950 dark:text-red-400 dark:border-red-800")}>

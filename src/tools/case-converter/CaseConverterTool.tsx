@@ -27,7 +27,7 @@ export function CaseConverterTool() {
   return (
     <div className="space-y-5">
       <textarea
-        className="textarea-field h-[20rem]"
+        className="textarea-field tool-panel"
         placeholder="Type or paste text to convert…"
         value={input}
         onChange={(e) => setInput(e.target.value)}

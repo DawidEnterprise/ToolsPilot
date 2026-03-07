@@ -56,7 +56,7 @@ export function CssMinifierTool() {
         <div>
           <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">CSS Input</label>
           <textarea
-            className="textarea-field h-[28rem]"
+            className="textarea-field tool-panel"
             placeholder={"body {\n  margin: 0;\n  padding: 0;\n}"}
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -68,7 +68,7 @@ export function CssMinifierTool() {
             {mode === "minify" ? "Minified Output" : "Beautified Output"}
           </label>
           <textarea
-            className="textarea-field h-[28rem] bg-gray-50 dark:bg-gray-800"
+            className="textarea-field tool-panel bg-gray-50 dark:bg-gray-800"
             value={output}
             readOnly
             placeholder="Output appears here…"

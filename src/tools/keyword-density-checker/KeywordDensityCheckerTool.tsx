@@ -11,7 +11,7 @@ export function KeywordDensityCheckerTool() {
 
   return (
     <div className="space-y-4">
-      <textarea className="input-field h-[16rem]" placeholder="Paste your content here to analyze keyword density..." value={input} onChange={e => setInput(e.target.value)} />
+      <textarea className="input-field tool-panel" placeholder="Paste your content here to analyze keyword density..." value={input} onChange={e => setInput(e.target.value)} />
       {total > 0 && (
         <div className="rounded-lg bg-gray-50 dark:bg-gray-800 p-4">
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">{total} words, {Object.keys(freq).length} unique</p>

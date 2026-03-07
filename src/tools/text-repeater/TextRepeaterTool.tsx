@@ -28,7 +28,7 @@ export function TextRepeaterTool() {
           Text to Repeat
         </label>
         <textarea
-          className="input-field h-[12rem]"
+          className="input-field tool-panel"
           placeholder="Enter text here..."
           value={text}
           onChange={(e) => setText(e.target.value)}

@@ -78,7 +78,7 @@ export function RobotsTxtGeneratorTool() {
             <label className="block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">robots.txt</label>
             <button onClick={copy} className="text-xs text-brand-500 hover:text-brand-600">Copy</button>
           </div>
-          <pre className="min-h-[300px] overflow-auto rounded-lg border border-gray-200 bg-gray-50 p-4 font-mono text-sm dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100">
+          <pre className="tool-panel overflow-auto rounded-lg border border-gray-200 bg-gray-50 p-4 font-mono text-sm dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100">
             {output}
           </pre>
         </div>

@@ -41,7 +41,7 @@ export function RemoveLineBreaksTool() {
         <div>
           <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">Input</label>
           <textarea
-            className="input-field h-[24rem]"
+            className="input-field tool-panel"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Paste text with line breaks..."
@@ -54,7 +54,7 @@ export function RemoveLineBreaksTool() {
             {output && <button onClick={copy} className="text-xs text-brand-500 hover:text-brand-600">Copy</button>}
           </div>
           <textarea
-            className="input-field h-[24rem]"
+            className="input-field tool-panel"
             value={output}
             readOnly
           />

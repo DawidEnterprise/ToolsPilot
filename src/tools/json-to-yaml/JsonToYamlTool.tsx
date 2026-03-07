@@ -35,7 +35,7 @@ export function JsonToYamlTool() {
         <div>
           <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">JSON Input</label>
           <textarea
-            className="textarea-field h-[28rem]"
+            className="textarea-field tool-panel"
             placeholder='{"key": "value"}'
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -45,7 +45,7 @@ export function JsonToYamlTool() {
         <div>
           <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">YAML Output</label>
           <textarea
-            className="textarea-field h-[28rem] bg-gray-50 dark:bg-gray-800"
+            className="textarea-field tool-panel bg-gray-50 dark:bg-gray-800"
             value={output}
             readOnly
             placeholder="YAML output appears here…"

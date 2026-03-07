@@ -45,7 +45,7 @@ export function JsBeautifierMinifierTool() {
         <div>
           <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">Input</label>
           <textarea
-            className="input-field h-[24rem] font-mono text-sm"
+            className="input-field tool-panel font-mono text-sm"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Paste your JavaScript here..."
@@ -57,7 +57,7 @@ export function JsBeautifierMinifierTool() {
             <label className="block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">Output</label>
             {output && <button onClick={copy} className="text-xs text-brand-500 hover:text-brand-600">Copy</button>}
           </div>
-          <pre className="h-[24rem] overflow-auto rounded-lg border border-gray-200 bg-gray-50 p-3 font-mono text-sm dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100">
+          <pre className="tool-panel overflow-auto rounded-lg border border-gray-200 bg-gray-50 p-3 font-mono text-sm dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100">
             {output || <span className="text-gray-400">Output will appear here...</span>}
           </pre>
         </div>

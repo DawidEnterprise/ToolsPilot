@@ -37,7 +37,7 @@ export function SchemaMarkupGeneratorTool() {
       ))}
       <div>
         <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">JSON-LD Output</label>
-        <textarea className="input-field font-mono text-sm bg-gray-50 dark:bg-gray-800 min-h-[200px]" readOnly value={'<script type="application/ld+json">\n' + output + '\n</script>'} />
+        <textarea className="input-field font-mono text-sm bg-gray-50 dark:bg-gray-800 tool-panel" readOnly value={'<script type="application/ld+json">\n' + output + '\n</script>'} />
       </div>
       <button onClick={() => navigator.clipboard.writeText('<script type="application/ld+json">\n' + output + '\n</script>')} className="btn-primary text-sm">Copy</button>
     </div>

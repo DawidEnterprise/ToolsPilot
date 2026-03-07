@@ -21,7 +21,7 @@ export function TextDiffTool() {
         <div>
           <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">Original Text</label>
           <textarea
-            className="textarea-field h-[22rem]"
+            className="textarea-field tool-panel"
             placeholder="Paste the original text…"
             value={textA}
             onChange={(e) => setTextA(e.target.value)}
@@ -31,7 +31,7 @@ export function TextDiffTool() {
         <div>
           <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">Modified Text</label>
           <textarea
-            className="textarea-field h-[22rem]"
+            className="textarea-field tool-panel"
             placeholder="Paste the modified text…"
             value={textB}
             onChange={(e) => setTextB(e.target.value)}

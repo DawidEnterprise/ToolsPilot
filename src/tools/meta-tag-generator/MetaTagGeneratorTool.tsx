@@ -73,7 +73,7 @@ export function MetaTagGeneratorTool() {
             <label className="block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">Generated Tags</label>
             <button onClick={copy} className="text-xs text-brand-500 hover:text-brand-600">Copy</button>
           </div>
-          <pre className="min-h-[400px] overflow-auto rounded-lg border border-gray-200 bg-gray-50 p-3 font-mono text-sm dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100">
+          <pre className="tool-panel overflow-auto rounded-lg border border-gray-200 bg-gray-50 p-3 font-mono text-sm dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100">
             {output}
           </pre>
         </div>

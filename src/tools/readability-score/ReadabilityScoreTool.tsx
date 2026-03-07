@@ -21,7 +21,7 @@ export function ReadabilityScoreTool() {
 
   return (
     <div className="space-y-4">
-      <textarea className="input-field min-h-[200px]" placeholder="Paste your text to analyze readability..." value={input} onChange={e => setInput(e.target.value)} />
+      <textarea className="input-field tool-panel" placeholder="Paste your text to analyze readability..." value={input} onChange={e => setInput(e.target.value)} />
       {words.length > 2 && (
         <div className="rounded-lg bg-gray-50 dark:bg-gray-800 p-4 space-y-2 text-sm">
           <p className="text-gray-700 dark:text-gray-300">Flesch Reading Ease: <strong className="text-lg">{flesch.toFixed(1)}</strong></p>

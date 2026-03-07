@@ -71,6 +71,12 @@
     min-height: 20rem;
   }
 
+  /* Viewport-filling panels for tool pages */
+  .tool-panel {
+    height: calc(100vh - 20rem);
+    min-height: 16rem;
+  }
+
   .section-heading {
     @apply text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl dark:text-gray-100;
   }
