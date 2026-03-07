@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/lib/config";
+import { AdSlot } from "@/components/AdSlot";
 
 export const metadata: Metadata = {
   title: "About",
@@ -34,6 +35,8 @@ export default function AboutPage() {
           </div>
         ))}
       </div>
+
+      <AdSlot position="in-content" className="mt-8" />
 
       {/* Content */}
       <div className="prose prose-gray mx-auto mt-12 max-w-none dark:prose-invert">

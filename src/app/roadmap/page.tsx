@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/config";
+import { AdSlot } from "@/components/AdSlot";
 
 export const metadata: Metadata = {
   title: "Roadmap",
@@ -102,10 +103,10 @@ export default function RoadmapPage() {
       </div>
 
       <div className="mt-12 space-y-10">
-        {phases.map((phase) => (
-          <div
-            key={phase.phase}
-            className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-900"
+        {phases.map((phase, idx) => (
+          <div key={phase.phase}>
+            <div
+              className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-900"
           >
             <div className="flex flex-wrap items-center gap-3">
               <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
@@ -157,6 +158,8 @@ export default function RoadmapPage() {
               ))}
             </ul>
           </div>
+          {idx === 1 && <AdSlot position="in-content" className="mt-6" />}
+          </div>
         ))}
       </div>
 
@@ -177,6 +180,8 @@ export default function RoadmapPage() {
           and we&apos;ll consider adding it to the roadmap.
         </p>
       </div>
+
+      <AdSlot position="tool-bottom" className="mt-8" />
     </div>
   );
 }

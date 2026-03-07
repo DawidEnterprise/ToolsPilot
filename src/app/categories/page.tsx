@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CATEGORIES } from "@/lib/types";
 import { tools } from "@/lib/registry";
+import { AdSlot } from "@/components/AdSlot";
 
 export const metadata: Metadata = {
   title: "Categories",
@@ -13,6 +14,8 @@ export default function CategoriesPage() {
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
       <h1 className="section-heading">Categories</h1>
       <p className="mt-2 text-gray-500 dark:text-gray-400">Browse our tools by category</p>
+
+      <AdSlot position="tool-top" className="mt-6" />
 
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {CATEGORIES.map((cat) => {
@@ -33,6 +36,8 @@ export default function CategoriesPage() {
           );
         })}
       </div>
+
+      <AdSlot position="tool-bottom" className="mt-10" />
     </div>
   );
 }

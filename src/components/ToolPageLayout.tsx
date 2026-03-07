@@ -54,9 +54,16 @@ export function ToolPageLayout({ tool, children }: ToolPageLayoutProps) {
 
         <AdSlot position="tool-top" className="mx-auto w-full max-w-7xl px-4 py-2 sm:px-6 lg:px-8" />
 
-        {/* Tool body — no card wrapper, just the tool at full width */}
-        <div className="flex-1 mx-auto w-full max-w-7xl px-4 pb-6 sm:px-6 lg:px-8">
-          {children}
+        {/* Tool body + optional sidebar ad on xl screens */}
+        <div className="flex-1 mx-auto w-full max-w-7xl px-4 pb-6 sm:px-6 lg:px-8 xl:flex xl:gap-8">
+          <div className="min-w-0 flex-1">
+            {children}
+          </div>
+          <aside className="hidden xl:block w-[300px] flex-shrink-0 pt-2">
+            <div className="sticky top-20">
+              <AdSlot position="sidebar" />
+            </div>
+          </aside>
         </div>
 
         <AdSlot position="tool-bottom" className="mx-auto w-full max-w-7xl px-4 pb-4 sm:px-6 lg:px-8" />

@@ -72,6 +72,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider>
           <Header />
           <main className="flex-1">{children}</main>
+          {/* Footer ad — appears above the site footer on every page */}
+          <AdSlot position="footer" className="mx-auto w-full max-w-7xl px-4 py-4 sm:px-6 lg:px-8" />
           <Footer />
           {/* Global anchor ad — sticky bottom, highest viewability */}
           <AdSlot position="anchor" className="fixed bottom-0 left-0 right-0 z-40" />
