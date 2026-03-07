@@ -26,7 +26,7 @@ export function CharacterCounterTool() {
   return (
     <div className="space-y-5">
       <textarea
-        className="textarea-field tool-panel"
+        className="textarea-field"
         placeholder="Type or paste text to count characters…"
         value={input}
         onChange={(e) => setInput(e.target.value)}

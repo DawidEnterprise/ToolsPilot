@@ -11,7 +11,7 @@ export function CsvToTableTool() {
 
   return (
     <div className="space-y-4">
-      <textarea className="input-field tool-panel font-mono text-sm" placeholder="Paste CSV data..." value={input} onChange={e => setInput(e.target.value)} />
+      <textarea className="textarea-field font-mono text-sm" placeholder="Paste CSV data..." value={input} onChange={e => setInput(e.target.value)} />
       <div className="flex items-center gap-2">
         <label className="text-sm text-gray-600 dark:text-gray-400">Separator:</label>
         <select className="input-field w-24" value={sep} onChange={e => setSep(e.target.value)}>

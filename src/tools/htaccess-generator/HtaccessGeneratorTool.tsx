@@ -30,7 +30,7 @@ export function HtaccessGeneratorTool() {
           </label>
         ))}
       </div>
-      <textarea className="input-field font-mono text-sm bg-gray-50 dark:bg-gray-800 tool-panel" readOnly value={output} />
+      <textarea className="input-field font-mono text-sm bg-gray-50 dark:bg-gray-800 min-h-[16rem]" readOnly value={output} />
       <button onClick={() => navigator.clipboard.writeText(output)} className="btn-primary text-sm">Copy .htaccess</button>
     </div>
   );

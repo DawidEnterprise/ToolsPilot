@@ -28,7 +28,7 @@ export function TextToSpeechTool() {
 
   return (
     <div className="space-y-4">
-      <textarea className="input-field tool-panel" placeholder="Enter text to speak..." value={text} onChange={e => setText(e.target.value)} />
+      <textarea className="textarea-field" placeholder="Enter text to speak..." value={text} onChange={e => setText(e.target.value)} />
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Voice</label>

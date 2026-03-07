@@ -22,7 +22,7 @@ export function JsonToTableTool() {
 
   return (
     <div className="space-y-4">
-      <textarea className="input-field tool-panel font-mono text-sm" placeholder="Paste JSON array..." value={input} onChange={e => setInput(e.target.value)} />
+      <textarea className="textarea-field font-mono text-sm" placeholder="Paste JSON array..." value={input} onChange={e => setInput(e.target.value)} />
       <button onClick={parse} className="btn-primary text-sm">View as Table</button>
       {error && <p className="text-sm text-red-600">{error}</p>}
       {data && headers.length > 0 && (

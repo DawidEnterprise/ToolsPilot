@@ -27,7 +27,7 @@ export function JsonSorterTool() {
           JSON Input
         </label>
         <textarea
-          className="input-field tool-panel font-mono text-sm"
+          className="textarea-field font-mono text-sm"
           placeholder='{"zebra": 1, "apple": 2, "mango": 3}'
           value={input}
           onChange={(e) => setInput(e.target.value)}
@@ -75,7 +75,7 @@ export function JsonSorterTool() {
             <span className="text-xs font-semibold text-gray-500 dark:text-gray-400">Sorted JSON</span>
             <CopyButton text={result} />
           </div>
-          <pre className="whitespace-pre-wrap text-sm font-mono text-gray-900 dark:text-gray-100 tool-panel overflow-y-auto">
+          <pre className="whitespace-pre-wrap text-sm font-mono text-gray-900 dark:text-gray-100 max-h-[32rem] overflow-y-auto">
             {result}
           </pre>
         </div>
