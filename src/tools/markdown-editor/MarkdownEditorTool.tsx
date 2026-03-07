@@ -22,14 +22,14 @@ export function MarkdownEditorTool() {
 
   return (
     <div className="space-y-4">
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid gap-4 lg:grid-cols-2">
         <div>
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Markdown</label>
-          <textarea className="input-field min-h-[300px] font-mono text-sm" value={md} onChange={e => setMd(e.target.value)} />
+          <textarea className="input-field h-[24rem] font-mono text-sm" value={md} onChange={e => setMd(e.target.value)} />
         </div>
         <div>
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Preview</label>
-          <div className="input-field min-h-[300px] prose prose-sm dark:prose-invert overflow-auto" dangerouslySetInnerHTML={{ __html: html }} />
+          <div className="input-field h-[24rem] prose prose-sm dark:prose-invert overflow-auto" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </div>
       <button onClick={() => navigator.clipboard.writeText(html)} className="btn-primary text-sm">Copy HTML</button>

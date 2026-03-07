@@ -27,9 +27,19 @@ export function TailwindToCssTool() {
 
   return (
     <div className="space-y-4">
-      <textarea className="input-field min-h-[100px] font-mono text-sm" placeholder="Paste Tailwind classes..." value={input} onChange={e => setInput(e.target.value)} />
-      <textarea className="input-field min-h-[150px] font-mono text-sm bg-gray-50 dark:bg-gray-800" readOnly value={output} />
-      <button onClick={() => navigator.clipboard.writeText(output)} className="btn-primary text-sm">Copy CSS</button>
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <div>
+          <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">Tailwind Classes</label>
+          <textarea className="input-field h-[24rem] font-mono text-sm" placeholder="Paste Tailwind classes..." value={input} onChange={e => setInput(e.target.value)} />
+        </div>
+        <div>
+          <div className="mb-1 flex items-center justify-between">
+            <label className="block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">CSS Output</label>
+            <button onClick={() => navigator.clipboard.writeText(output)} className="text-xs text-brand-500 hover:text-brand-600">Copy</button>
+          </div>
+          <textarea className="input-field h-[24rem] font-mono text-sm bg-gray-50 dark:bg-gray-800" readOnly value={output} />
+        </div>
+      </div>
     </div>
   );
 }

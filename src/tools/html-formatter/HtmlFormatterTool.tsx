@@ -26,13 +26,23 @@ export function HtmlFormatterTool() {
 
   return (
     <div className="space-y-4">
-      <textarea className="input-field min-h-[200px] font-mono text-sm" placeholder="Paste HTML here..." value={input} onChange={e => setInput(e.target.value)} />
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <div>
+          <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">Input HTML</label>
+          <textarea className="input-field h-[24rem] font-mono text-sm" placeholder="Paste HTML here..." value={input} onChange={e => setInput(e.target.value)} />
+        </div>
+        <div>
+          <div className="mb-1 flex items-center justify-between">
+            <label className="block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">Output</label>
+            {output && <button onClick={() => navigator.clipboard.writeText(output)} className="text-xs text-brand-500 hover:text-brand-600">Copy</button>}
+          </div>
+          <textarea className="input-field h-[24rem] font-mono text-sm bg-gray-50 dark:bg-gray-800" readOnly value={output} />
+        </div>
+      </div>
       <div className="flex gap-2">
         <button onClick={() => setOutput(beautifyHtml(input))} className="btn-primary text-sm">Beautify</button>
         <button onClick={() => setOutput(minifyHtml(input))} className="btn-secondary text-sm">Minify</button>
       </div>
-      <textarea className="input-field min-h-[200px] font-mono text-sm bg-gray-50 dark:bg-gray-800" readOnly value={output} />
-      {output && <button onClick={() => navigator.clipboard.writeText(output)} className="btn-secondary text-sm">Copy</button>}
     </div>
   );
 }

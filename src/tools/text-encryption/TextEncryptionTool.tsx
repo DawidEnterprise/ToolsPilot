@@ -38,15 +38,25 @@ export function TextEncryptionTool() {
 
   return (
     <div className="space-y-4">
-      <textarea className="input-field min-h-[120px] font-mono" placeholder="Enter text to encrypt or ciphertext to decrypt..." value={input} onChange={e => setInput(e.target.value)} />
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <div>
+          <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">Input</label>
+          <textarea className="input-field h-[20rem] font-mono" placeholder="Enter text to encrypt or ciphertext to decrypt..." value={input} onChange={e => setInput(e.target.value)} />
+        </div>
+        <div>
+          <div className="mb-1 flex items-center justify-between">
+            <label className="block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">Output</label>
+            {output && <button onClick={() => navigator.clipboard.writeText(output)} className="text-xs text-brand-500 hover:text-brand-600">Copy</button>}
+          </div>
+          <textarea className="input-field h-[20rem] font-mono bg-gray-50 dark:bg-gray-800" readOnly value={output} />
+        </div>
+      </div>
       <input type="password" className="input-field" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} autoComplete="off" />
       <div className="flex gap-2">
         <button onClick={doEncrypt} className="btn-primary text-sm" disabled={!password}>Encrypt (AES-256)</button>
         <button onClick={doDecrypt} className="btn-secondary text-sm" disabled={!password}>Decrypt</button>
       </div>
       {error && <p className="text-sm text-red-600">{error}</p>}
-      <textarea className="input-field min-h-[120px] font-mono bg-gray-50 dark:bg-gray-800" readOnly value={output} />
-      {output && <button onClick={() => navigator.clipboard.writeText(output)} className="btn-secondary text-sm">Copy</button>}
     </div>
   );
 }

@@ -46,10 +46,20 @@ export function JsonToGraphqlTool() {
 
   return (
     <div className="space-y-4">
-      <textarea className="input-field min-h-[150px] font-mono" placeholder="Paste JSON here..." value={input} onChange={e => setInput(e.target.value)} />
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <div>
+          <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">JSON Input</label>
+          <textarea className="input-field h-[24rem] font-mono" placeholder="Paste JSON here..." value={input} onChange={e => setInput(e.target.value)} />
+        </div>
+        <div>
+          <div className="mb-1 flex items-center justify-between">
+            <label className="block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">GraphQL Schema</label>
+            {output && <button onClick={() => navigator.clipboard.writeText(output)} className="text-xs text-brand-500 hover:text-brand-600">Copy</button>}
+          </div>
+          <textarea className="input-field h-[24rem] font-mono bg-gray-50 dark:bg-gray-800" readOnly value={output} />
+        </div>
+      </div>
       <button onClick={convert} className="btn-primary text-sm">Generate GraphQL Schema</button>
-      <textarea className="input-field min-h-[150px] font-mono bg-gray-50 dark:bg-gray-800" readOnly value={output} />
-      {output && <button onClick={() => navigator.clipboard.writeText(output)} className="btn-secondary text-sm">Copy</button>}
     </div>
   );
 }

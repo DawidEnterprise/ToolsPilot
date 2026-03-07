@@ -41,28 +41,33 @@ export function JsBeautifierMinifierTool() {
         </button>
       </div>
 
-      <textarea
-        className="input-field min-h-[200px] font-mono text-sm"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        placeholder="Paste your JavaScript here..."
-        autoFocus
-      />
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <div>
+          <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">Input</label>
+          <textarea
+            className="input-field h-[24rem] font-mono text-sm"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="Paste your JavaScript here..."
+            autoFocus
+          />
+        </div>
+        <div>
+          <div className="mb-1 flex items-center justify-between">
+            <label className="block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">Output</label>
+            {output && <button onClick={copy} className="text-xs text-brand-500 hover:text-brand-600">Copy</button>}
+          </div>
+          <pre className="h-[24rem] overflow-auto rounded-lg border border-gray-200 bg-gray-50 p-3 font-mono text-sm dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100">
+            {output || <span className="text-gray-400">Output will appear here...</span>}
+          </pre>
+        </div>
+      </div>
 
       <button onClick={process} className="btn-primary">
         {mode === "beautify" ? "Beautify" : "Minify"} Code
       </button>
 
       {error && <p className="text-sm text-red-500">{error}</p>}
-
-      {output && (
-        <div className="relative">
-          <button onClick={copy} className="absolute right-2 top-2 btn-secondary text-xs">Copy</button>
-          <pre className="max-h-96 overflow-auto rounded-lg border border-gray-200 bg-gray-50 p-4 font-mono text-sm dark:border-gray-700 dark:bg-gray-900">
-            {output}
-          </pre>
-        </div>
-      )}
     </div>
   );
 }

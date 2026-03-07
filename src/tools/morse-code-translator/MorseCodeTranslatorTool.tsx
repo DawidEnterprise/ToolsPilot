@@ -33,32 +33,31 @@ export function MorseCodeTranslatorTool() {
         ))}
       </div>
 
-      <div>
-        <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">
-          {direction === "encode" ? "Text Input" : "Morse Code Input"}
-        </label>
-        <textarea
-          className="input-field min-h-[100px] font-mono"
-          placeholder={direction === "encode" ? "Enter text here..." : "Enter morse code (e.g. .... . .-.. .-.. ---)"}
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          autoFocus
-        />
-      </div>
-
-      {result && (
-        <div className="rounded-lg border border-gray-200 bg-gray-50 px-5 py-4 dark:border-gray-700 dark:bg-gray-800">
-          <div className="flex items-center justify-between mb-2">
-            <span className="text-xs font-semibold text-gray-500 dark:text-gray-400">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <div>
+          <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">
+            {direction === "encode" ? "Text Input" : "Morse Code Input"}
+          </label>
+          <textarea
+            className="input-field h-[20rem] font-mono"
+            placeholder={direction === "encode" ? "Enter text here..." : "Enter morse code (e.g. .... . .-.. .-.. ---)"}
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            autoFocus
+          />
+        </div>
+        <div>
+          <div className="mb-1 flex items-center justify-between">
+            <label className="block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">
               {direction === "encode" ? "Morse Code" : "Decoded Text"}
-            </span>
-            <CopyButton text={result} />
+            </label>
+            {result && <CopyButton text={result} />}
           </div>
-          <pre className="whitespace-pre-wrap break-all text-lg font-mono text-brand-600 dark:text-brand-400">
-            {result}
+          <pre className="h-[20rem] overflow-auto rounded-lg border border-gray-200 bg-gray-50 p-3 font-mono text-sm whitespace-pre-wrap break-all dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100">
+            {result || <span className="text-gray-400">Output will appear here...</span>}
           </pre>
         </div>
-      )}
+      </div>
 
       <div className="text-xs text-gray-500 dark:text-gray-400">
         <p>Use spaces between letters and / between words. Example: .... . .-.. .-.. --- / .-- --- .-. .-.. -..</p>
