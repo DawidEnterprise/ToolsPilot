@@ -45,6 +45,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["json", "format", "validate", "beautify", "pretty", "print", "json formatter", "json validator", "json pretty print", "json beautifier", "json viewer", "json lint", "format json online", "json checker", "json parser", "validate json online", "json pretty printer", "minify json"],
     relatedTools: ["json-to-yaml", "yaml-to-json", "xml-formatter", "csv-json-converter"],
+    layout: 'full',
   },
   {
     slug: "json-to-yaml",
@@ -54,6 +55,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["json", "yaml", "convert", "json to yaml", "json to yml", "convert json to yaml", "json yaml converter", "json2yaml", "online json to yaml"],
     relatedTools: ["json-formatter", "yaml-to-json"],
+    layout: 'full',
   },
   {
     slug: "yaml-to-json",
@@ -63,6 +65,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["yaml", "json", "convert", "yaml to json", "yml to json", "convert yaml to json", "yaml json converter", "yaml2json", "parse yaml", "yaml parser online"],
     relatedTools: ["json-formatter", "json-to-yaml"],
+    layout: 'full',
   },
   {
     slug: "xml-formatter",
@@ -72,6 +75,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["xml", "format", "beautify", "validate", "minify", "xml formatter", "xml beautifier", "xml validator", "xml minifier", "format xml online", "xml pretty print", "xml viewer", "xml lint", "xml parser"],
     relatedTools: ["json-formatter", "css-minifier"],
+    layout: 'full',
   },
   {
     slug: "csv-json-converter",
@@ -81,6 +85,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["csv", "json", "convert", "table", "data", "csv to json", "json to csv", "csv converter", "convert csv to json", "csv json converter", "excel to json", "csv parser", "csv to json online"],
     relatedTools: ["json-formatter", "json-to-yaml"],
+    layout: 'full',
   },
   {
     slug: "base64-encoder",
@@ -90,6 +95,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["base64", "encode", "decode", "convert", "base64 encoder", "base64 decoder", "base64 encode online", "base64 decode online", "encode to base64", "decode base64", "base64 converter", "text to base64", "base64 to text"],
     relatedTools: ["url-encoder", "html-encoder"],
+    layout: 'full',
   },
   {
     slug: "url-encoder",
@@ -99,6 +105,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["url", "encode", "decode", "percent", "url encoder", "url decoder", "url encode online", "percent encoding", "encode url", "decode url", "urlencode", "urldecode", "url encoding tool"],
     relatedTools: ["base64-encoder", "html-encoder"],
+    layout: 'full',
   },
   {
     slug: "html-encoder",
@@ -108,6 +115,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["html", "entity", "encode", "decode", "special", "characters", "html encoder", "html decoder", "html entities", "html escape", "html unescape", "escape html", "html special characters", "html entity encoder", "encode html online"],
     relatedTools: ["base64-encoder", "url-encoder"],
+    layout: 'full',
   },
   {
     slug: "uuid-generator",
@@ -117,6 +125,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["uuid", "guid", "generate", "random", "uuid generator", "guid generator", "generate uuid", "uuid v4", "random uuid", "bulk uuid", "uuid online", "unique id generator", "uuid creator"],
     relatedTools: ["password-generator", "hash-generator"],
+    layout: 'compact',
   },
   {
     slug: "regex-tester",
@@ -153,6 +162,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["timestamp", "unix", "epoch", "date", "convert", "time", "unix timestamp", "epoch converter", "timestamp converter", "unix time", "epoch to date", "date to timestamp", "unix timestamp converter", "current timestamp", "epoch time"],
     relatedTools: ["number-base-converter"],
+    layout: 'compact',
   },
   {
     slug: "number-base-converter",
@@ -162,6 +172,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["binary", "hex", "octal", "decimal", "number", "base", "convert", "number base converter", "binary to decimal", "decimal to binary", "hex to decimal", "decimal to hex", "binary to hex", "hex converter", "binary converter", "octal converter", "base converter"],
     relatedTools: ["timestamp-converter", "hash-generator"],
+    layout: 'compact',
   },
   {
     slug: "css-minifier",
@@ -171,6 +182,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["css", "minify", "beautify", "compress", "format", "css minifier", "css beautifier", "minify css online", "css compressor", "css formatter", "css pretty print", "format css", "compress css", "beautify css online"],
     relatedTools: ["json-formatter", "xml-formatter"],
+    layout: 'full',
   },
   {
     slug: "markdown-to-html",
@@ -180,6 +192,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["markdown", "html", "convert", "render", "preview", "markdown to html", "md to html", "markdown converter", "markdown renderer", "markdown preview", "convert markdown to html", "markdown parser", "markdown viewer online"],
     relatedTools: ["html-encoder", "json-formatter"],
+    layout: 'full',
   },
   {
     slug: "color-converter",
@@ -189,6 +202,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["color", "hex", "rgb", "hsl", "convert", "picker", "color converter", "hex to rgb", "rgb to hex", "hsl to hex", "color picker", "color code", "colour converter", "hex color converter", "color format converter", "css color converter"],
     relatedTools: ["css-minifier"],
+    layout: 'compact',
   },
 
   // ─── Text Tools ──────────────────────────────────
@@ -227,6 +241,7 @@ export const tools: ToolDefinition[] = [
     icon: "type",
     keywords: ["slug", "url", "seo", "generate", "permalink", "slug generator", "url slug", "seo slug", "generate slug", "url friendly", "permalink generator", "slugify", "slug maker", "clean url generator"],
     relatedTools: ["case-converter", "url-encoder"],
+    layout: 'compact',
   },
   {
     slug: "lorem-ipsum-generator",
@@ -245,6 +260,7 @@ export const tools: ToolDefinition[] = [
     icon: "type",
     keywords: ["diff", "compare", "text", "difference", "merge", "text diff", "compare text", "text compare", "diff checker", "find differences", "compare two texts", "online diff", "text comparison tool", "diff tool online"],
     relatedTools: ["word-counter", "line-sorter"],
+    layout: 'full',
   },
   {
     slug: "line-sorter",
@@ -254,6 +270,7 @@ export const tools: ToolDefinition[] = [
     icon: "type",
     keywords: ["sort", "lines", "deduplicate", "remove", "duplicates", "shuffle", "line sorter", "sort lines", "sort text", "remove duplicate lines", "alphabetical sort", "sort lines online", "dedup lines", "text line sorter"],
     relatedTools: ["text-diff", "case-converter"],
+    layout: 'full',
   },
 
   // ─── Misc / Utility ──────────────────────────────
@@ -265,6 +282,7 @@ export const tools: ToolDefinition[] = [
     icon: "misc",
     keywords: ["password", "generate", "secure", "random", "strong", "password generator", "generate password", "random password", "strong password", "secure password generator", "password maker", "password creator", "online password generator"],
     relatedTools: ["uuid-generator", "hash-generator"],
+    layout: 'compact',
   },
 
   // ─── Calculators ─────────────────────────────────
@@ -276,6 +294,7 @@ export const tools: ToolDefinition[] = [
     icon: "misc",
     keywords: ["percentage", "calculator", "percent", "change", "increase", "decrease", "percentage calculator", "calculate percentage", "what is percent of", "percent change", "percentage increase", "percentage decrease", "percent calculator online", "how to calculate percentage"],
     relatedTools: ["tip-calculator", "bmi-calculator"],
+    layout: 'compact',
   },
   {
     slug: "age-calculator",
@@ -285,6 +304,7 @@ export const tools: ToolDefinition[] = [
     icon: "misc",
     keywords: ["age", "calculator", "birthday", "date", "years", "months", "days", "age calculator", "calculate age", "how old am i", "exact age", "age in days", "birthday calculator", "date of birth calculator", "age finder"],
     relatedTools: ["countdown-timer", "timestamp-converter"],
+    layout: 'compact',
   },
   {
     slug: "tip-calculator",
@@ -294,6 +314,7 @@ export const tools: ToolDefinition[] = [
     icon: "misc",
     keywords: ["tip", "calculator", "bill", "split", "restaurant", "gratuity", "tip calculator", "calculate tip", "split bill", "bill splitter", "restaurant tip", "how much to tip", "gratuity calculator", "tip calculator online"],
     relatedTools: ["percentage-calculator", "bmi-calculator"],
+    layout: 'compact',
   },
   {
     slug: "bmi-calculator",
@@ -303,6 +324,7 @@ export const tools: ToolDefinition[] = [
     icon: "misc",
     keywords: ["bmi", "body", "mass", "index", "calculator", "health", "weight", "bmi calculator", "calculate bmi", "body mass index", "bmi chart", "bmi checker", "am i overweight", "healthy weight calculator", "bmi online"],
     relatedTools: ["percentage-calculator", "age-calculator"],
+    layout: 'compact',
   },
   {
     slug: "countdown-timer",
@@ -321,6 +343,7 @@ export const tools: ToolDefinition[] = [
     icon: "misc",
     keywords: ["random", "number", "generator", "rng", "dice", "range", "random number generator", "random number", "generate random number", "rng online", "random integer", "dice roller", "random number picker", "number randomizer"],
     relatedTools: ["password-generator", "uuid-generator"],
+    layout: 'compact',
   },
 
   // ─── More Text Tools ─────────────────────────────
@@ -341,6 +364,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["binary", "translator", "text", "hex", "octal", "encode", "decode", "binary translator", "text to binary", "binary to text", "binary converter", "binary code translator", "translate binary", "binary text converter"],
     relatedTools: ["base64-encoder", "number-base-converter"],
+    layout: 'full',
   },
   {
     slug: "morse-code-translator",
@@ -350,6 +374,7 @@ export const tools: ToolDefinition[] = [
     icon: "type",
     keywords: ["morse", "code", "translator", "encode", "decode", "dots", "dashes", "morse code translator", "text to morse code", "morse code to text", "morse code converter", "morse decoder", "translate morse code", "morse code online"],
     relatedTools: ["binary-translator", "case-converter"],
+    layout: 'full',
   },
 
   // ─── More Developer Tools ────────────────────────
@@ -401,6 +426,7 @@ export const tools: ToolDefinition[] = [
     icon: "misc",
     keywords: ["stopwatch", "timer", "lap", "clock", "time", "milliseconds", "online stopwatch", "stopwatch online", "free stopwatch", "lap timer", "split timer", "stopwatch with laps", "digital stopwatch", "web stopwatch"],
     relatedTools: ["countdown-timer", "pomodoro-timer"],
+    layout: 'compact',
   },
   {
     slug: "loan-calculator",
@@ -428,6 +454,7 @@ export const tools: ToolDefinition[] = [
     icon: "misc",
     keywords: ["pomodoro", "timer", "productivity", "focus", "work", "break", "technique", "pomodoro timer", "pomodoro technique", "focus timer", "productivity timer", "25 minute timer", "work timer", "study timer", "pomodoro online", "pomodoro clock"],
     relatedTools: ["stopwatch", "countdown-timer"],
+    layout: 'compact',
   },
   {
     slug: "roman-numeral-converter",
@@ -437,6 +464,7 @@ export const tools: ToolDefinition[] = [
     icon: "misc",
     keywords: ["roman", "numeral", "converter", "decimal", "number", "I", "V", "X", "L", "C", "D", "M", "roman numeral converter", "roman numerals", "convert roman numerals", "roman to decimal", "decimal to roman", "roman numeral chart", "roman number converter"],
     relatedTools: ["number-base-converter", "binary-translator"],
+    layout: 'compact',
   },
 
   // Tier 2
@@ -448,6 +476,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["javascript", "beautifier", "minifier", "format", "compress", "prettify", "uglify", "js beautifier", "js minifier", "javascript formatter", "format javascript", "beautify js", "minify js", "js formatter online", "javascript prettifier", "compress javascript"],
     relatedTools: ["sql-formatter", "json-formatter"],
+    layout: 'full',
   },
   {
     slug: "sql-formatter",
@@ -457,6 +486,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["sql", "formatter", "beautify", "query", "indent", "database", "sql formatter", "format sql", "sql beautifier", "sql pretty print", "format sql query", "sql formatter online", "beautify sql", "sql query formatter", "format sql online"],
     relatedTools: ["js-beautifier-minifier", "json-formatter"],
+    layout: 'full',
   },
   {
     slug: "cron-expression-parser",
@@ -466,6 +496,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["cron", "expression", "parser", "schedule", "job", "linux", "crontab", "cron expression parser", "cron parser", "crontab guru", "cron expression generator", "explain cron", "cron schedule", "cron job", "parse cron expression", "crontab parser"],
     relatedTools: ["timestamp-converter", "regex-tester"],
+    layout: 'compact',
   },
   {
     slug: "json-to-typescript",
@@ -475,6 +506,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["json", "typescript", "interface", "type", "convert", "generate", "schema", "json to typescript", "json to ts", "generate typescript", "json to interface", "typescript interface generator", "json to type", "convert json to typescript"],
     relatedTools: ["json-formatter", "json-to-yaml"],
+    layout: 'full',
   },
   {
     slug: "html-to-markdown",
@@ -484,6 +516,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["html", "markdown", "convert", "transform", "md", "markup", "html to markdown", "html to md", "convert html to markdown", "html markdown converter", "html2markdown", "html to md converter"],
     relatedTools: ["markdown-preview", "html-entity-encoder"],
+    layout: 'full',
   },
   {
     slug: "px-to-rem-converter",
@@ -493,6 +526,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["px", "rem", "converter", "pixel", "css", "font", "size", "responsive", "px to rem", "rem to px", "pixel to rem", "px rem converter", "css px to rem", "convert px to rem", "rem converter", "px to rem calculator"],
     relatedTools: ["unit-converter", "css-gradient-generator"],
+    layout: 'compact',
   },
   {
     slug: "json-path-tester",
@@ -502,6 +536,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["jsonpath", "tester", "query", "json", "path", "selector", "extract", "json path tester", "jsonpath tester", "test jsonpath", "jsonpath expression", "json query", "jsonpath online", "json path finder"],
     relatedTools: ["json-formatter", "json-to-typescript"],
+    layout: 'full',
   },
 
   // Tier 3
@@ -513,6 +548,7 @@ export const tools: ToolDefinition[] = [
     icon: "type",
     keywords: ["find", "replace", "search", "text", "regex", "substitute", "find and replace", "search and replace", "find replace online", "text find replace", "bulk find replace", "regex find replace", "find and replace tool"],
     relatedTools: ["text-diff", "regex-tester"],
+    layout: 'full',
   },
   {
     slug: "remove-line-breaks",
@@ -522,6 +558,7 @@ export const tools: ToolDefinition[] = [
     icon: "type",
     keywords: ["remove", "line", "breaks", "join", "merge", "newline", "remove line breaks", "remove newlines", "join lines", "merge lines", "remove line breaks online", "delete line breaks", "strip newlines", "single line text"],
     relatedTools: ["find-and-replace", "word-counter"],
+    layout: 'full',
   },
   {
     slug: "text-to-ascii-art",
@@ -549,6 +586,7 @@ export const tools: ToolDefinition[] = [
     icon: "image",
     keywords: ["aspect", "ratio", "calculator", "width", "height", "resize", "scale", "16:9", "aspect ratio calculator", "calculate aspect ratio", "aspect ratio", "screen ratio", "image ratio", "video aspect ratio", "4:3", "21:9", "aspect ratio converter"],
     relatedTools: ["image-resizer", "image-compressor"],
+    layout: 'compact',
   },
   {
     slug: "meta-tag-generator",
@@ -558,6 +596,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["meta", "tag", "generator", "seo", "html", "open graph", "twitter", "meta tag generator", "seo meta tags", "html meta tags", "og tags", "twitter card", "meta tags for seo", "generate meta tags", "meta description generator"],
     relatedTools: ["open-graph-preview", "robots-txt-generator"],
+    layout: 'full',
   },
   {
     slug: "open-graph-preview",
@@ -567,6 +606,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["open graph", "og", "preview", "social", "facebook", "twitter", "linkedin", "share", "open graph preview", "og preview", "social media preview", "facebook preview", "twitter card preview", "link preview", "og tag preview", "social share preview"],
     relatedTools: ["meta-tag-generator", "robots-txt-generator"],
+    layout: 'full',
   },
   {
     slug: "robots-txt-generator",
@@ -576,6 +616,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["robots", "txt", "generator", "seo", "crawl", "search engine", "sitemap", "robots.txt generator", "robots txt", "generate robots.txt", "robots.txt creator", "crawl control", "search engine crawl", "robots file generator"],
     relatedTools: ["meta-tag-generator", "open-graph-preview"],
+    layout: 'full',
   },
   {
     slug: "favicon-generator",
@@ -585,6 +626,7 @@ export const tools: ToolDefinition[] = [
     icon: "image",
     keywords: ["favicon", "generator", "icon", "website", "svg", "png", "logo", "favicon generator", "create favicon", "favicon maker", "website icon", "favicon creator", "generate favicon", "favicon from text", "ico generator"],
     relatedTools: ["image-converter", "color-palette-generator"],
+    layout: 'full',
   },
   {
     slug: "data-size-converter",
@@ -594,6 +636,7 @@ export const tools: ToolDefinition[] = [
     icon: "code",
     keywords: ["data", "size", "converter", "bytes", "bits", "KB", "MB", "GB", "TB", "binary", "transfer", "data size converter", "byte converter", "kb to mb", "mb to gb", "gb to tb", "data unit converter", "file size converter", "storage converter"],
     relatedTools: ["unit-converter", "number-base-converter"],
+    layout: 'compact',
   },
 
   // ═══════════════════════════════════════════════════
@@ -781,6 +824,7 @@ export const tools: ToolDefinition[] = [
     description: "Format, beautify, and indent HTML code online. Free HTML pretty printer.",
     category: "developer", icon: "code",
     keywords: ["html", "format", "beautify", "indent", "pretty print", "html formatter", "html beautifier"],
+    layout: 'full',
   },
   {
     slug: "typescript-to-javascript", name: "TypeScript to JavaScript",
@@ -794,6 +838,7 @@ export const tools: ToolDefinition[] = [
     description: "Generate GraphQL schema types from JSON data. Auto-generate types and queries.",
     category: "developer", icon: "code",
     keywords: ["json", "graphql", "schema", "convert", "types", "json to graphql", "graphql generator"],
+    layout: 'full',
   },
   {
     slug: "yaml-validator", name: "YAML Validator",
@@ -837,12 +882,14 @@ export const tools: ToolDefinition[] = [
     description: "Convert Tailwind CSS classes to vanilla CSS. Extract plain CSS from Tailwind utilities.",
     category: "developer", icon: "code",
     keywords: ["tailwind", "css", "convert", "vanilla", "utility", "tailwind to css", "tailwind converter"],
+    layout: 'full',
   },
   {
     slug: "svg-optimizer", name: "SVG Optimizer",
     description: "Optimize and minify SVG files. Reduce SVG file size by removing unnecessary metadata.",
     category: "developer", icon: "code",
     keywords: ["svg", "optimize", "minify", "compress", "svg optimizer", "svgo", "reduce svg"],
+    layout: 'full',
   },
   {
     slug: "javascript-obfuscator", name: "JavaScript Obfuscator",
@@ -856,6 +903,7 @@ export const tools: ToolDefinition[] = [
     description: "Write HTML, CSS, and JavaScript with live preview. Free online code playground.",
     category: "developer", icon: "code",
     keywords: ["html", "css", "javascript", "preview", "playground", "codepen", "live preview", "html editor"],
+    layout: 'full',
   },
   {
     slug: "code-screenshot", name: "Code Screenshot Generator",
@@ -883,6 +931,7 @@ export const tools: ToolDefinition[] = [
     description: "Calculate Unix file permissions. Convert between numeric and symbolic chmod notation.",
     category: "developer", icon: "code",
     keywords: ["chmod", "calculator", "permissions", "unix", "linux", "file permissions", "chmod calculator"],
+    layout: 'compact',
   },
   {
     slug: "htaccess-generator", name: ".htaccess Generator",
@@ -901,6 +950,7 @@ export const tools: ToolDefinition[] = [
     description: "Find the right Git command for any task. Searchable reference with examples.",
     category: "developer", icon: "code",
     keywords: ["git", "command", "generator", "reference", "cheat sheet", "git commands", "git help"],
+    layout: 'compact',
   },
 
   // ─── More Text & Writing Tools ──────────────────
@@ -949,18 +999,21 @@ export const tools: ToolDefinition[] = [
     description: "Write Markdown with live preview, syntax highlighting, and toolbar shortcuts.",
     category: "developer", icon: "code",
     keywords: ["markdown", "editor", "preview", "write", "markdown editor", "md editor", "markdown writer"],
+    layout: 'full',
   },
   {
     slug: "text-to-binary", name: "Text to Binary Converter",
     description: "Convert text to binary code (0s and 1s). Binary to text decoder included.",
     category: "developer", icon: "code",
     keywords: ["text", "binary", "convert", "0", "1", "text to binary", "binary converter"],
+    layout: 'full',
   },
   {
     slug: "text-to-hex", name: "Text to Hex Converter",
     description: "Convert text to hexadecimal encoding and back. Free hex encoder/decoder.",
     category: "developer", icon: "code",
     keywords: ["text", "hex", "hexadecimal", "convert", "encode", "text to hex", "hex converter"],
+    layout: 'full',
   },
   {
     slug: "unicode-lookup", name: "Unicode Character Lookup",
@@ -979,12 +1032,14 @@ export const tools: ToolDefinition[] = [
     description: "Encrypt and decrypt text with AES, DES, and other ciphers. Secure text online.",
     category: "misc", icon: "misc",
     keywords: ["encrypt", "decrypt", "text", "aes", "cipher", "text encryption", "online encryption", "encode"],
+    layout: 'full',
   },
   {
     slug: "nato-phonetic-alphabet", name: "NATO Phonetic Alphabet Converter",
     description: "Convert text to NATO phonetic alphabet. Alpha, Bravo, Charlie spelling system.",
     category: "text", icon: "type",
     keywords: ["nato", "phonetic", "alphabet", "alpha", "bravo", "spelling", "nato alphabet", "radio alphabet"],
+    layout: 'full',
   },
   {
     slug: "text-to-speech", name: "Text to Speech",
@@ -1012,6 +1067,7 @@ export const tools: ToolDefinition[] = [
     description: "Preview how your page appears in Google search results. Optimize title and description.",
     category: "seo", icon: "code",
     keywords: ["serp", "preview", "google", "search", "seo", "serp preview", "google preview", "search result preview"],
+    layout: 'compact',
   },
   {
     slug: "sitemap-generator", name: "XML Sitemap Generator",
@@ -1025,6 +1081,7 @@ export const tools: ToolDefinition[] = [
     description: "Generate canonical URL tags to prevent duplicate content issues.",
     category: "seo", icon: "code",
     keywords: ["canonical", "tag", "url", "seo", "duplicate", "canonical tag", "canonical url", "rel canonical"],
+    layout: 'compact',
   },
   {
     slug: "schema-markup-generator", name: "Schema Markup Generator",
@@ -1072,12 +1129,14 @@ export const tools: ToolDefinition[] = [
     description: "Calculate compound interest on savings and investments. See growth over time with charts.",
     category: "misc", icon: "misc",
     keywords: ["compound", "interest", "calculator", "savings", "investment", "compound interest calculator", "interest rate"],
+    layout: 'compact',
   },
   {
     slug: "salary-calculator", name: "Salary Calculator",
     description: "Convert between hourly, weekly, monthly, and annual salary. Tax estimation included.",
     category: "misc", icon: "misc",
     keywords: ["salary", "calculator", "hourly", "annual", "wage", "salary calculator", "pay calculator", "income"],
+    layout: 'compact',
   },
   {
     slug: "tax-calculator", name: "Income Tax Calculator",
@@ -1091,48 +1150,56 @@ export const tools: ToolDefinition[] = [
     description: "Calculate sale prices and savings. Find the final price after percentage or fixed discount.",
     category: "misc", icon: "misc",
     keywords: ["discount", "calculator", "sale", "price", "savings", "percentage off", "discount calculator", "sale price"],
+    layout: 'compact',
   },
   {
     slug: "gpa-calculator", name: "GPA Calculator",
     description: "Calculate your Grade Point Average. Support for 4.0 and weighted GPA scales.",
     category: "misc", icon: "misc",
     keywords: ["gpa", "calculator", "grade", "point", "average", "gpa calculator", "college gpa", "cumulative gpa"],
+    layout: 'compact',
   },
   {
     slug: "grade-calculator", name: "Grade Calculator",
     description: "Calculate final grades and what you need on the final exam. Weighted grade calculator.",
     category: "misc", icon: "misc",
     keywords: ["grade", "calculator", "final", "exam", "weighted", "grade calculator", "final grade", "what grade do i need"],
+    layout: 'compact',
   },
   {
     slug: "fuel-cost-calculator", name: "Fuel Cost Calculator",
     description: "Calculate fuel costs for your trip. Estimate gas expenses based on distance and MPG.",
     category: "misc", icon: "misc",
     keywords: ["fuel", "cost", "calculator", "gas", "trip", "mpg", "fuel calculator", "gas calculator", "trip cost"],
+    layout: 'compact',
   },
   {
     slug: "electricity-cost-calculator", name: "Electricity Cost Calculator",
     description: "Calculate electricity costs for your appliances. Estimate monthly and yearly power bills.",
     category: "misc", icon: "misc",
     keywords: ["electricity", "cost", "calculator", "power", "watt", "kwh", "electricity calculator", "power bill"],
+    layout: 'compact',
   },
   {
     slug: "calorie-calculator", name: "Calorie Calculator",
     description: "Calculate daily calorie needs based on age, weight, height, and activity level.",
     category: "misc", icon: "misc",
     keywords: ["calorie", "calculator", "tdee", "bmr", "diet", "calorie calculator", "daily calories", "calorie counter"],
+    layout: 'compact',
   },
   {
     slug: "date-calculator", name: "Date / Duration Calculator",
     description: "Calculate the difference between two dates. Add or subtract days, months, and years.",
     category: "misc", icon: "misc",
     keywords: ["date", "calculator", "duration", "difference", "days between", "date calculator", "date difference", "how many days"],
+    layout: 'compact',
   },
   {
     slug: "mortgage-calculator", name: "Mortgage Calculator",
     description: "Calculate monthly mortgage payments with taxes and insurance. Full amortization schedule.",
     category: "misc", icon: "misc",
     keywords: ["mortgage", "calculator", "home loan", "payment", "interest", "mortgage calculator", "home payment", "house payment"],
+    layout: 'compact',
   },
   {
     slug: "investment-calculator", name: "Investment Return Calculator",
@@ -1197,6 +1264,7 @@ export const tools: ToolDefinition[] = [
     description: "Check how strong your password is. Get suggestions to improve password security.",
     category: "misc", icon: "misc",
     keywords: ["password", "strength", "checker", "secure", "test", "password strength", "how strong is my password"],
+    layout: 'compact',
   },
   {
     slug: "user-agent-parser", name: "User Agent Parser",
@@ -1226,12 +1294,14 @@ export const tools: ToolDefinition[] = [
     description: "Convert HEX color codes to RGB values. Color preview included.",
     category: "developer", icon: "code",
     keywords: ["hex", "rgb", "convert", "color", "hex to rgb", "color converter", "hex color"],
+    layout: 'compact',
   },
   {
     slug: "rgb-to-hex", name: "RGB to HEX Converter",
     description: "Convert RGB values to HEX color codes. Find the hex code for any RGB color.",
     category: "developer", icon: "code",
     keywords: ["rgb", "hex", "convert", "color", "rgb to hex", "color converter", "rgb color"],
+    layout: 'compact',
   },
   {
     slug: "image-to-text-ocr", name: "Image to Text (OCR)",
@@ -1266,6 +1336,7 @@ export const tools: ToolDefinition[] = [
     description: "Convert JSON data to XML format. Free online JSON to XML transformer.",
     category: "developer", icon: "code",
     keywords: ["json", "xml", "convert", "transform", "json to xml", "xml converter", "data converter"],
+    layout: 'full',
   },
 ];
 

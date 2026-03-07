@@ -61,8 +61,12 @@ export function ToolPageLayout({ tool, children }: ToolPageLayoutProps) {
 
         <AdSlot position="tool-top" className="mx-auto w-full max-w-7xl px-4 py-2 sm:px-6 lg:px-8" />
 
-        {/* Tool body — full-width, fills remaining viewport */}
-        <div className="flex-1 flex flex-col px-4 pb-2 sm:px-6">
+        {/* Tool body — width depends on layout type */}
+        <div className={`flex-1 flex flex-col px-4 pb-2 sm:px-6 ${
+          tool.layout === 'full' ? '' :
+          tool.layout === 'compact' ? 'max-w-3xl mx-auto w-full' :
+          'max-w-4xl mx-auto w-full'
+        }`}>
           <div className="flex-1 min-h-0">
             {children}
           </div>

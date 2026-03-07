@@ -34,6 +34,8 @@ export interface ToolDefinition {
   schemaType?: string;
   /** If true, tool is coming soon (renders placeholder) */
   comingSoon?: boolean;
+  /** Layout hint: 'full' = edge-to-edge (side-by-side editors), 'compact' = narrow centered (small widgets) */
+  layout?: 'full' | 'compact';
 }
 
 export interface ToolCategory_Meta {
