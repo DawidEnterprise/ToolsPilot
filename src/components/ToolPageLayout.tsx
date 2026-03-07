@@ -59,21 +59,23 @@ export function ToolPageLayout({ tool, children }: ToolPageLayoutProps) {
           )}
         </div>
 
-        <AdSlot position="tool-top" className="mx-auto w-full max-w-7xl px-4 py-3 sm:px-6 lg:px-8" />
+        <AdSlot position="tool-top" className="mx-auto w-full max-w-7xl px-4 py-2 sm:px-6 lg:px-8" />
 
-        {/* Tool body + optional sidebar ad on xl screens */}
-        <div className="flex-1 mx-auto w-full max-w-7xl px-4 pb-6 sm:px-6 lg:px-8 xl:flex xl:gap-8">
-          <div className="min-w-0 flex-1">
+        {/* Tool body — full-width, fills remaining viewport */}
+        <div className="flex-1 flex flex-col px-4 pb-2 sm:px-6">
+          <div className="flex-1 min-h-0">
             {children}
           </div>
-          <aside className="hidden xl:block w-[300px] flex-shrink-0 pt-2">
-            <div className="sticky top-20">
-              <AdSlot position="sidebar" />
-            </div>
-          </aside>
         </div>
 
-        <AdSlot position="tool-bottom" className="mx-auto w-full max-w-7xl px-4 pb-4 sm:px-6 lg:px-8" />
+        <div className="flex items-center gap-4 px-4 pb-2 sm:px-6 lg:px-8">
+          <div className="flex-1">
+            <AdSlot position="tool-bottom" />
+          </div>
+          <div className="hidden xl:block w-[300px] flex-shrink-0">
+            <AdSlot position="sidebar" />
+          </div>
+        </div>
       </div>
     </div>
   );

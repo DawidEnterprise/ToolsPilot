@@ -73,8 +73,8 @@
 
   /* Viewport-filling panels for tool pages */
   .tool-panel {
-    height: calc(100vh - 20rem);
-    min-height: 16rem;
+    height: calc(100vh - 16rem);
+    min-height: 20rem;
   }
 
   .section-heading {
