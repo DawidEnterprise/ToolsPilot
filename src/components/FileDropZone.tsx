@@ -5,7 +5,9 @@ import { useCallback, useState, useRef } from "react";
 interface FileDropZoneProps {
   accept: string;
   maxSizeMB?: number;
-  onFile: (file: File) => void;
+  onFile?: (file: File) => void;
+  onFiles?: (files: File[]) => void;
+  multiple?: boolean;
   label?: string;
 }
 
@@ -13,32 +15,43 @@ export function FileDropZone({
   accept,
   maxSizeMB = 10,
   onFile,
+  onFiles,
+  multiple = false,
   label = "Drop your file here, or click to browse",
 }: FileDropZoneProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [dragging, setDragging] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const handleFile = useCallback(
-    (file: File) => {
+  const validateAndDispatch = useCallback(
+    (files: File[]) => {
       setError(null);
-      if (file.size > maxSizeMB * 1024 * 1024) {
-        setError(`File is too large (${(file.size / 1024 / 1024).toFixed(1)} MB). Maximum size is ${maxSizeMB} MB.`);
-        return;
+      const valid: File[] = [];
+      for (const file of files) {
+        if (file.size > maxSizeMB * 1024 * 1024) {
+          setError(`"${file.name}" is too large (${(file.size / 1024 / 1024).toFixed(1)} MB). Max ${maxSizeMB} MB.`);
+          continue;
+        }
+        valid.push(file);
       }
-      onFile(file);
+      if (valid.length === 0) return;
+      if (multiple && onFiles) {
+        onFiles(valid);
+      } else if (onFile) {
+        onFile(valid[0]);
+      }
     },
-    [maxSizeMB, onFile]
+    [maxSizeMB, onFile, onFiles, multiple]
   );
 
   const onDrop = useCallback(
     (e: React.DragEvent) => {
       e.preventDefault();
       setDragging(false);
-      const file = e.dataTransfer.files[0];
-      if (file) handleFile(file);
+      const files = Array.from(e.dataTransfer.files);
+      if (files.length > 0) validateAndDispatch(multiple ? files : [files[0]]);
     },
-    [handleFile]
+    [validateAndDispatch, multiple]
   );
 
   return (
@@ -57,10 +70,11 @@ export function FileDropZone({
         ref={inputRef}
         type="file"
         accept={accept}
+        multiple={multiple}
         className="hidden"
         onChange={(e) => {
-          const file = e.target.files?.[0];
-          if (file) handleFile(file);
+          const files = Array.from(e.target.files ?? []);
+          if (files.length > 0) validateAndDispatch(multiple ? files : [files[0]]);
           e.target.value = "";
         }}
       />
@@ -70,6 +84,7 @@ export function FileDropZone({
       <p className="text-sm font-medium text-gray-700 dark:text-gray-300">{label}</p>
       <p className="mt-1 text-xs text-gray-400 dark:text-gray-500">
         Supported formats: {accept.split(",").map(f => f.split("/")[1]?.toUpperCase()).filter(Boolean).join(", ")}
+        {multiple && " · Select multiple files"}
       </p>
       {error && (
         <div className="mt-3 rounded-md bg-red-50 border border-red-200 px-3 py-2 text-xs text-red-600 dark:bg-red-950 dark:border-red-800 dark:text-red-400">

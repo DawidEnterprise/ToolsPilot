@@ -4,8 +4,6 @@ import { getCategoryMeta } from "@/lib/types";
 import { AdSlot } from "./AdSlot";
 import { getToolBySlug, getPublishedTools } from "@/lib/registry";
 import { toolSeoData } from "@/lib/seo-data";
-import { ShareButtons } from "./ShareButtons";
-
 interface ToolPageLayoutProps {
   tool: ToolDefinition;
   children: React.ReactNode;
@@ -60,12 +58,6 @@ export function ToolPageLayout({ tool, children }: ToolPageLayoutProps) {
           {tool.name}
         </h1>
         <p className="mt-2 text-lg text-gray-600 dark:text-gray-400">{tool.description}</p>
-        <div className="mt-3 flex items-center gap-4">
-          <span className="inline-flex items-center rounded-full bg-green-50 px-2.5 py-0.5 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20 dark:bg-green-900/30 dark:text-green-400 dark:ring-green-500/30">100% Free</span>
-          <span className="inline-flex items-center rounded-full bg-blue-50 px-2.5 py-0.5 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-600/20 dark:bg-blue-900/30 dark:text-blue-400 dark:ring-blue-500/30">No Sign-up</span>
-          <span className="inline-flex items-center rounded-full bg-purple-50 px-2.5 py-0.5 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-600/20 dark:bg-purple-900/30 dark:text-purple-400 dark:ring-purple-500/30">Browser-only</span>
-          <ShareButtons toolSlug={tool.slug} toolName={tool.name} />
-        </div>
       </div>
 
       {/* Ad 1: Leaderboard above the tool */}
