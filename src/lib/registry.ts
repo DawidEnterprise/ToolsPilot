@@ -548,7 +548,6 @@ export const tools: ToolDefinition[] = [
     icon: "type",
     keywords: ["find", "replace", "search", "text", "regex", "substitute", "find and replace", "search and replace", "find replace online", "text find replace", "bulk find replace", "regex find replace", "find and replace tool"],
     relatedTools: ["text-diff", "regex-tester"],
-    layout: 'full',
   },
   {
     slug: "remove-line-breaks",
@@ -626,7 +625,7 @@ export const tools: ToolDefinition[] = [
     icon: "image",
     keywords: ["favicon", "generator", "icon", "website", "svg", "png", "logo", "favicon generator", "create favicon", "favicon maker", "website icon", "favicon creator", "generate favicon", "favicon from text", "ico generator"],
     relatedTools: ["image-converter", "color-palette-generator"],
-    layout: 'full',
+    layout: 'compact',
   },
   {
     slug: "data-size-converter",
