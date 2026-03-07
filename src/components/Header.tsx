@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { siteConfig } from "@/lib/config";
 import { useTheme } from "./ThemeProvider";
@@ -14,7 +15,7 @@ export function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 text-xl font-bold text-brand-600">
-          <span aria-hidden="true">⚡</span>
+          <Image src="/favicon-32.png" alt="" width={28} height={28} className="rounded" />
           {siteConfig.name}
         </Link>
 
