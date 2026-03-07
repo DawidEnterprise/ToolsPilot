@@ -50,11 +50,11 @@ export function XmlFormatterTool() {
       <div className="grid gap-4 lg:grid-cols-2">
         <div>
           <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">XML Input</label>
-          <textarea className="textarea-field h-72" placeholder='<root><item>Hello</item></root>' value={input} onChange={(e) => setInput(e.target.value)} spellCheck={false} />
+          <textarea className="textarea-field h-[28rem]" placeholder='<root><item>Hello</item></root>' value={input} onChange={(e) => setInput(e.target.value)} spellCheck={false} />
         </div>
         <div>
           <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">{mode === "format" ? "Formatted" : "Minified"} Output</label>
-          <textarea className="textarea-field h-72 bg-gray-50 dark:bg-gray-800" value={output} readOnly placeholder="Output appears here…" spellCheck={false} />
+          <textarea className="textarea-field h-[28rem] bg-gray-50 dark:bg-gray-800" value={output} readOnly placeholder="Output appears here…" spellCheck={false} />
         </div>
       </div>
     </div>

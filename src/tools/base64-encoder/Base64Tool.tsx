@@ -65,7 +65,7 @@ export function Base64Tool() {
             {mode === "encode" ? "Plain Text" : "Base64 String"}
           </label>
           <textarea
-            className="textarea-field h-56"
+            className="textarea-field h-[24rem]"
             placeholder={mode === "encode" ? "Type or paste text to encode…" : "Paste Base64 string to decode…"}
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -77,7 +77,7 @@ export function Base64Tool() {
             {mode === "encode" ? "Base64 Output" : "Decoded Text"}
           </label>
           <textarea
-            className="textarea-field h-56 bg-gray-50 dark:bg-gray-800"
+            className="textarea-field h-[24rem] bg-gray-50 dark:bg-gray-800"
             value={output}
             readOnly
             placeholder="Result appears here automatically…"

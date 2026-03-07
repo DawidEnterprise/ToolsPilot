@@ -60,7 +60,7 @@ export function FileDropZone({
       onDragLeave={() => setDragging(false)}
       onDrop={onDrop}
       onClick={() => inputRef.current?.click()}
-      className={`cursor-pointer rounded-xl border-2 border-dashed p-10 text-center transition-colors ${
+      className={`cursor-pointer rounded-xl border-2 border-dashed px-6 py-16 sm:py-24 text-center transition-colors ${
         dragging
           ? "border-brand-400 bg-brand-50 dark:bg-brand-950"
           : "border-gray-300 bg-gray-50 hover:border-brand-300 hover:bg-brand-50/50 dark:border-gray-600 dark:bg-gray-800 dark:hover:border-brand-500 dark:hover:bg-brand-950/50"

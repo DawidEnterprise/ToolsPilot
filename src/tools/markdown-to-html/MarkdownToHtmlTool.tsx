@@ -41,7 +41,7 @@ export function MarkdownToHtmlTool() {
             Markdown
           </label>
           <textarea
-            className="textarea-field h-80"
+            className="textarea-field h-[30rem]"
             placeholder={"# Hello World\n\nType your **markdown** here…"}
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -54,12 +54,12 @@ export function MarkdownToHtmlTool() {
           </label>
           {tab === "preview" ? (
             <div
-              className="h-80 overflow-y-auto rounded-lg border border-gray-300 bg-white p-4 prose prose-sm max-w-none dark:border-gray-600 dark:bg-gray-800 dark:prose-invert"
+              className="h-[30rem] overflow-y-auto rounded-lg border border-gray-300 bg-white p-4 prose prose-sm max-w-none dark:border-gray-600 dark:bg-gray-800 dark:prose-invert"
               dangerouslySetInnerHTML={{ __html: html || '<span class="text-gray-400">Preview will appear here…</span>' }}
             />
           ) : (
             <textarea
-              className="textarea-field h-80 bg-gray-50 dark:bg-gray-800"
+              className="textarea-field h-[30rem] bg-gray-50 dark:bg-gray-800"
               value={html}
               readOnly
               placeholder="HTML output appears here…"

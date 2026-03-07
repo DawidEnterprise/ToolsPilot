@@ -70,14 +70,14 @@ export function LineSorterTool() {
       <div className="grid gap-4 lg:grid-cols-2">
         <div>
           <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">Input Lines</label>
-          <textarea className="textarea-field h-64" placeholder={"banana\napple\ncherry\napple"} value={input} onChange={(e) => setInput(e.target.value)} spellCheck={false} />
+          <textarea className="textarea-field h-[26rem]" placeholder={"banana\napple\ncherry\napple"} value={input} onChange={(e) => setInput(e.target.value)} spellCheck={false} />
         </div>
         <div>
           <div className="flex items-center justify-between mb-1">
             <label className="block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">Sorted Output</label>
             {output && <CopyButton text={output} />}
           </div>
-          <textarea className="textarea-field h-64 bg-gray-50 dark:bg-gray-800" value={output} readOnly placeholder="Sorted output…" spellCheck={false} />
+          <textarea className="textarea-field h-[26rem] bg-gray-50 dark:bg-gray-800" value={output} readOnly placeholder="Sorted output…" spellCheck={false} />
         </div>
       </div>
     </div>

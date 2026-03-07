@@ -60,7 +60,7 @@ export function CsvJsonTool() {
             {mode === "csv-to-json" ? "CSV Input" : "JSON Input"}
           </label>
           <textarea
-            className="textarea-field h-72"
+            className="textarea-field h-[28rem]"
             placeholder={mode === "csv-to-json" ? "name,age,city\nAlice,30,NYC\nBob,25,LA" : '[{"name":"Alice","age":"30"}]'}
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -71,7 +71,7 @@ export function CsvJsonTool() {
           <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">
             {mode === "csv-to-json" ? "JSON Output" : "CSV Output"}
           </label>
-          <textarea className="textarea-field h-72 bg-gray-50 dark:bg-gray-800" value={output} readOnly placeholder="Output appears here…" spellCheck={false} />
+          <textarea className="textarea-field h-[28rem] bg-gray-50 dark:bg-gray-800" value={output} readOnly placeholder="Output appears here…" spellCheck={false} />
         </div>
       </div>
     </div>

@@ -33,11 +33,11 @@ export function HtmlEncoderTool() {
       <div className="grid gap-4 lg:grid-cols-2">
         <div>
           <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">{mode === "encode" ? "HTML / Text" : "Encoded HTML"}</label>
-          <textarea className="textarea-field h-48" placeholder={mode === "encode" ? '<p>Hello & "World"</p>' : '&lt;p&gt;Hello &amp; &quot;World&quot;&lt;/p&gt;'} value={input} onChange={(e) => setInput(e.target.value)} spellCheck={false} />
+          <textarea className="textarea-field h-[22rem]" placeholder={mode === "encode" ? '<p>Hello & "World"</p>' : '&lt;p&gt;Hello &amp; &quot;World&quot;&lt;/p&gt;'} value={input} onChange={(e) => setInput(e.target.value)} spellCheck={false} />
         </div>
         <div>
           <label className="mb-1 block text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-400">{mode === "encode" ? "Encoded" : "Decoded"} Output</label>
-          <textarea className="textarea-field h-48 bg-gray-50 dark:bg-gray-800" value={output} readOnly placeholder="Result appears here…" spellCheck={false} />
+          <textarea className="textarea-field h-[22rem] bg-gray-50 dark:bg-gray-800" value={output} readOnly placeholder="Result appears here…" spellCheck={false} />
         </div>
       </div>
     </div>

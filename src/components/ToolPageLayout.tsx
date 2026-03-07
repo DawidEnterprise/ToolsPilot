@@ -18,7 +18,7 @@ export function ToolPageLayout({ tool, children }: ToolPageLayoutProps) {
 
   return (
     <div className="flex min-h-[calc(100vh-4rem)] flex-col">
-      {/* Sub-nav: breadcrumb left, related tools right */}
+      {/* Sub-nav bar */}
       <div className="border-b border-gray-100 bg-gray-50/50 dark:border-gray-800 dark:bg-gray-900/50">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
           <nav className="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400">
@@ -45,22 +45,21 @@ export function ToolPageLayout({ tool, children }: ToolPageLayoutProps) {
         </div>
       </div>
 
-      {/* Main content — fills remaining viewport height */}
-      <div className="flex-1">
-        <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-          {/* Header */}
+      {/* Main content — fills the viewport */}
+      <div className="flex-1 flex flex-col">
+        <div className="mx-auto w-full max-w-7xl px-4 pt-5 pb-2 sm:px-6 lg:px-8">
           <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">{tool.name}</h1>
           <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">{tool.description}</p>
-
-          <AdSlot position="tool-top" className="my-4" />
-
-          {/* Tool body — full width, generous padding */}
-          <div className="rounded-xl border border-gray-200/80 bg-white p-4 shadow-sm ring-1 ring-gray-900/5 sm:p-6 lg:p-8 dark:border-gray-700/60 dark:bg-gray-900 dark:ring-white/5">
-            {children}
-          </div>
-
-          <AdSlot position="tool-bottom" className="mt-4" />
         </div>
+
+        <AdSlot position="tool-top" className="mx-auto w-full max-w-7xl px-4 py-2 sm:px-6 lg:px-8" />
+
+        {/* Tool body — no card wrapper, just the tool at full width */}
+        <div className="flex-1 mx-auto w-full max-w-7xl px-4 pb-6 sm:px-6 lg:px-8">
+          {children}
+        </div>
+
+        <AdSlot position="tool-bottom" className="mx-auto w-full max-w-7xl px-4 pb-4 sm:px-6 lg:px-8" />
       </div>
     </div>
   );

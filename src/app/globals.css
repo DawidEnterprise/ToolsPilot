@@ -68,6 +68,7 @@
 
   .textarea-field {
     @apply input-field resize-y font-mono text-sm leading-relaxed;
+    min-height: 20rem;
   }
 
   .section-heading {

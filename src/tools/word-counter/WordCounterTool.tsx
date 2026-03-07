@@ -18,7 +18,7 @@ export function WordCounterTool() {
     <div className="space-y-6">
       {/* Textarea first — this is the primary action */}
       <textarea
-        className="textarea-field h-56"
+        className="textarea-field h-[24rem]"
         placeholder="Start typing or paste your text here…"
         value={input}
         onChange={(e) => setInput(e.target.value)}
