@@ -2630,4 +2630,270 @@ export const toolSeoData: Record<string, ToolSeoData> = {
       },
     ],
   },
+  "pdf-merger": {
+    seoTitle: "Merge PDF Files Online Free — Combine PDFs in Browser",
+    seoDescription:
+      "Merge multiple PDF files into one document instantly. No upload to servers — 100% browser-based. Reorder pages and download merged PDF for free.",
+    faqs: [
+      {
+        question: "How do I merge PDF files for free?",
+        answer:
+          "Click or drag your PDF files onto our merger. Reorder them using the arrows, then click Merge. Your combined PDF downloads instantly — files never leave your browser.",
+      },
+      {
+        question: "Is it safe to merge PDFs online?",
+        answer:
+          "Yes. Our PDF merger runs entirely in your browser using JavaScript. Your files are never uploaded to any server, so your documents stay completely private.",
+      },
+      {
+        question: "How many PDFs can I merge at once?",
+        answer:
+          "There is no hard limit. You can merge as many PDF files as your browser memory allows — typically dozens of files with hundreds of pages each.",
+      },
+    ],
+    content: [
+      {
+        heading: "How to Merge PDF Files",
+        body: "Upload two or more PDF files by clicking the upload area or dragging files onto it. Rearrange the order using the up and down arrows. Click the Merge button to combine all files into a single PDF document. The merged file downloads automatically to your device.",
+      },
+      {
+        heading: "Why Use Our PDF Merger?",
+        body: "Unlike other online tools, our PDF merger never uploads your files to a server. All processing happens locally in your browser using the pdf-lib library. This means your confidential documents stay private, and merging is instant regardless of your internet speed.",
+      },
+    ],
+    howTo: [
+      { name: "Upload PDFs", text: "Click or drag multiple PDF files onto the upload area." },
+      { name: "Reorder files", text: "Use the arrow buttons to arrange files in the desired order." },
+      { name: "Click Merge", text: "Press the Merge button to combine all PDFs into one file." },
+      { name: "Download", text: "Your merged PDF downloads automatically." },
+    ],
+  },
+  "pdf-splitter": {
+    seoTitle: "Split PDF Online Free — Extract Pages from PDF",
+    seoDescription:
+      "Split PDF files and extract specific pages for free. Select which pages to keep, then download. 100% browser-based, no upload required.",
+    faqs: [
+      {
+        question: "How do I split a PDF file?",
+        answer:
+          "Upload your PDF, then select the pages you want to extract by clicking the page numbers. Click Extract to download a new PDF containing only your selected pages.",
+      },
+      {
+        question: "Can I extract specific pages from a PDF?",
+        answer:
+          "Yes. After uploading, click individual page numbers to select or deselect them. You can extract any combination of pages — not just sequential ranges.",
+      },
+      {
+        question: "Is my PDF file safe?",
+        answer:
+          "Absolutely. The PDF is processed entirely in your browser. No data is sent to any server. Your file stays on your device at all times.",
+      },
+    ],
+    content: [
+      {
+        heading: "How to Split a PDF",
+        body: "Upload your PDF file to see all available pages. Click page numbers to select the ones you want to keep. Use Select All or Deselect All for quick selection. Click Extract to download a new PDF with only your chosen pages.",
+      },
+      {
+        heading: "Extract Any Pages You Need",
+        body: "Our PDF splitter lets you pick any combination of pages — not just ranges. Need pages 1, 5, and 12? Just click those three page numbers. The tool creates a clean new PDF with your selected pages in order.",
+      },
+    ],
+    howTo: [
+      { name: "Upload your PDF", text: "Click to select a PDF file from your device." },
+      { name: "Select pages", text: "Click the page numbers you want to extract." },
+      { name: "Click Extract", text: "Press Extract to create a new PDF with selected pages." },
+      { name: "Download", text: "The split PDF downloads automatically." },
+    ],
+  },
+  "pdf-compressor": {
+    seoTitle: "Compress PDF Online Free — Reduce PDF File Size",
+    seoDescription:
+      "Compress PDF files to reduce size without losing quality. Free online PDF compressor — no upload to servers, 100% browser-based.",
+    faqs: [
+      {
+        question: "How do I reduce PDF file size?",
+        answer:
+          "Upload your PDF and our compressor automatically optimizes it by removing unused objects and applying object-stream compression. Download the smaller file instantly.",
+      },
+      {
+        question: "Will compression reduce PDF quality?",
+        answer:
+          "No. Our compressor reduces file size by removing redundant data and optimizing the internal structure. Text, images, and formatting remain identical to the original.",
+      },
+      {
+        question: "How much can PDFs be compressed?",
+        answer:
+          "Results vary depending on the original file. PDFs with lots of embedded fonts, metadata, or redundant objects can see 10-60% size reductions. Already optimized files may see smaller gains.",
+      },
+    ],
+    content: [
+      {
+        heading: "How PDF Compression Works",
+        body: "Our compressor reads your PDF, rebuilds it from scratch, and applies object-stream compression. This removes unused objects, duplicate data, and metadata bloat. The result is a clean, smaller PDF that looks identical to the original.",
+      },
+      {
+        heading: "100% Private Compression",
+        body: "Your PDF never leaves your browser. All compression happens locally using JavaScript — no server upload, no waiting for cloud processing. This means your confidential documents stay completely private.",
+      },
+    ],
+    howTo: [
+      { name: "Upload PDF", text: "Click to select a PDF file from your device." },
+      { name: "Wait for compression", text: "The tool automatically compresses your PDF." },
+      { name: "Review results", text: "See original size, compressed size, and savings percentage." },
+      { name: "Download", text: "Click Download to save the compressed PDF." },
+    ],
+  },
+  "temperature-converter": {
+    seoTitle: "Temperature Converter — Celsius, Fahrenheit, Kelvin",
+    seoDescription:
+      "Convert between Celsius, Fahrenheit, and Kelvin instantly. Free online temperature converter with all-units reference table.",
+    faqs: [
+      {
+        question: "How do I convert Celsius to Fahrenheit?",
+        answer:
+          "Multiply the Celsius value by 9/5 and add 32. For example, 100°C × 9/5 + 32 = 212°F. Or simply use our converter — enter the value and it calculates instantly.",
+      },
+      {
+        question: "What is the formula for Fahrenheit to Celsius?",
+        answer:
+          "Subtract 32 from the Fahrenheit value and multiply by 5/9. For example, 72°F: (72 - 32) × 5/9 = 22.22°C.",
+      },
+      {
+        question: "What is 0 Kelvin in Celsius?",
+        answer:
+          "0 Kelvin (absolute zero) equals -273.15°C. It is the lowest possible temperature and represents the point where all molecular motion stops.",
+      },
+    ],
+    content: [
+      {
+        heading: "Temperature Conversion Made Easy",
+        body: "Enter any temperature value, select the source unit (Celsius, Fahrenheit, or Kelvin), and see instant conversions to all other units. The reference table below the converter shows all three unit values at a glance.",
+      },
+      {
+        heading: "Common Temperature Reference Points",
+        body: "Water freezes at 0°C (32°F, 273.15K) and boils at 100°C (212°F, 373.15K). Normal body temperature is 37°C (98.6°F). Room temperature is typically 20-22°C (68-72°F).",
+      },
+    ],
+    howTo: [
+      { name: "Enter temperature", text: "Type a number in the From field." },
+      { name: "Select source unit", text: "Choose Celsius, Fahrenheit, or Kelvin." },
+      { name: "Read the result", text: "The converted value appears instantly in the To field." },
+      { name: "View all units", text: "Check the reference table for all conversions at once." },
+    ],
+  },
+  "weight-converter": {
+    seoTitle: "Weight Converter — Kg, Lbs, Ounces, Grams, Stone",
+    seoDescription:
+      "Convert between kilograms, pounds, ounces, grams, stone, and metric tonnes. Free online weight and mass converter.",
+    faqs: [
+      {
+        question: "How many pounds are in a kilogram?",
+        answer:
+          "1 kilogram equals approximately 2.20462 pounds. To convert kg to lbs, multiply by 2.20462. Our converter does this calculation instantly.",
+      },
+      {
+        question: "How do I convert lbs to kg?",
+        answer:
+          "Divide the pound value by 2.20462, or multiply by 0.453592. For example, 150 lbs × 0.453592 = 68.04 kg.",
+      },
+      {
+        question: "What is a stone in pounds?",
+        answer:
+          "1 stone equals 14 pounds (6.35029 kg). Stone is commonly used in the UK and Ireland for measuring body weight.",
+      },
+    ],
+    content: [
+      {
+        heading: "Weight and Mass Converter",
+        body: "Convert between 7 common weight units including kilograms, grams, milligrams, pounds, ounces, stone, and metric tonnes. Enter a value, select your units, and see instant results with a complete conversion table.",
+      },
+      {
+        heading: "Metric vs Imperial Weight Units",
+        body: "The metric system uses grams and kilograms, while the imperial system uses pounds and ounces. Our converter handles both systems seamlessly, making it easy to convert between metric and imperial weights for cooking, shipping, fitness tracking, and more.",
+      },
+    ],
+    howTo: [
+      { name: "Enter weight", text: "Type a number in the From field." },
+      { name: "Select units", text: "Choose the source and target weight units." },
+      { name: "Read result", text: "The converted value appears instantly." },
+      { name: "View all units", text: "Check the reference table for all conversions." },
+    ],
+  },
+  "length-converter": {
+    seoTitle: "Length Converter — Meters, Feet, Inches, Miles, Km",
+    seoDescription:
+      "Convert between meters, feet, inches, miles, kilometers, yards, and more. Free online length and distance converter.",
+    faqs: [
+      {
+        question: "How many feet are in a meter?",
+        answer:
+          "1 meter equals approximately 3.28084 feet. To convert meters to feet, multiply by 3.28084.",
+      },
+      {
+        question: "How do I convert miles to kilometers?",
+        answer:
+          "Multiply miles by 1.60934. For example, 10 miles × 1.60934 = 16.09 km. Our converter does this calculation instantly.",
+      },
+      {
+        question: "How many inches in a centimeter?",
+        answer:
+          "1 centimeter equals approximately 0.393701 inches. Conversely, 1 inch equals 2.54 centimeters exactly.",
+      },
+    ],
+    content: [
+      {
+        heading: "Length and Distance Converter",
+        body: "Convert between 9 length units including millimeters, centimeters, meters, kilometers, inches, feet, yards, miles, and nautical miles. Perfect for travel planning, construction, DIY projects, and unit homework.",
+      },
+      {
+        heading: "Common Length Conversions",
+        body: "1 inch = 2.54 cm. 1 foot = 30.48 cm. 1 yard = 0.9144 m. 1 mile = 1.609 km. 1 nautical mile = 1.852 km. Our converter handles all these conversions and shows a complete reference table for every unit.",
+      },
+    ],
+    howTo: [
+      { name: "Enter length", text: "Type a number in the From field." },
+      { name: "Select units", text: "Choose the source and target length units." },
+      { name: "Read result", text: "The converted value appears instantly." },
+      { name: "View all units", text: "Check the reference table for all conversions." },
+    ],
+  },
+  "contrast-checker": {
+    seoTitle: "Color Contrast Checker — WCAG Accessibility Compliance",
+    seoDescription:
+      "Check WCAG 2.1 color contrast ratios for AA and AAA compliance. Test text and background color combinations with live preview.",
+    faqs: [
+      {
+        question: "What color contrast ratio is needed for WCAG AA?",
+        answer:
+          "WCAG AA requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text (18pt or 14pt bold). Our checker shows both levels.",
+      },
+      {
+        question: "What is WCAG AAA contrast?",
+        answer:
+          "WCAG AAA is the highest accessibility standard, requiring 7:1 for normal text and 4.5:1 for large text. Meeting AAA ensures readability for users with moderate vision impairment.",
+      },
+      {
+        question: "How is contrast ratio calculated?",
+        answer:
+          "Contrast ratio is calculated using the relative luminance of the two colors: (L1 + 0.05) / (L2 + 0.05), where L1 is the lighter color. The ratio ranges from 1:1 (no contrast) to 21:1 (maximum contrast, black on white).",
+      },
+    ],
+    content: [
+      {
+        heading: "Check Color Accessibility",
+        body: "Enter your text and background colors using hex codes or the color picker. The tool instantly calculates the WCAG contrast ratio and shows whether your combination passes AA and AAA standards for both normal and large text.",
+      },
+      {
+        heading: "Why Color Contrast Matters",
+        body: "Poor color contrast makes text difficult or impossible to read for users with vision impairments, color blindness, or in bright sunlight. WCAG guidelines ensure your website is accessible to everyone. Many countries require WCAG AA compliance by law.",
+      },
+    ],
+    howTo: [
+      { name: "Enter text color", text: "Use the color picker or type a hex code for the foreground color." },
+      { name: "Enter background color", text: "Use the color picker or type a hex code for the background." },
+      { name: "Check results", text: "See the contrast ratio and WCAG AA/AAA compliance levels." },
+      { name: "Preview", text: "View a live preview of your color combination with sample text." },
+    ],
+  },
 };

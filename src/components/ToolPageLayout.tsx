@@ -5,6 +5,7 @@ import { AdSlot } from "./AdSlot";
 import { ToolViewTracker } from "./ToolViewTracker";
 import { getToolBySlug } from "@/lib/registry";
 import { getUsageHint } from "@/lib/usage-hints";
+import { toolSeoData } from "@/lib/seo-data";
 
 interface ToolPageLayoutProps {
   tool: ToolDefinition;
@@ -14,6 +15,7 @@ interface ToolPageLayoutProps {
 export function ToolPageLayout({ tool, children }: ToolPageLayoutProps) {
   const category = getCategoryMeta(tool.category);
   const hint = getUsageHint(tool.slug);
+  const seo = toolSeoData[tool.slug];
 
   const relatedToolDefs = (tool.relatedTools ?? [])
     .map((slug) => getToolBySlug(slug))
@@ -77,6 +79,37 @@ export function ToolPageLayout({ tool, children }: ToolPageLayoutProps) {
             {children}
           </div>
         </div>
+
+        {/* SEO content sections — rendered below the tool for crawlability */}
+        {seo?.content && seo.content.length > 0 && (
+          <div className="mx-auto w-full max-w-4xl px-4 pt-8 pb-4 sm:px-6 lg:px-8">
+            <div className="space-y-6">
+              {seo.content.map((section, i) => (
+                <section key={i}>
+                  <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100">{section.heading}</h2>
+                  <p className="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-400">{section.body}</p>
+                </section>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* FAQ section — triggers Google rich snippets */}
+        {seo?.faqs && seo.faqs.length > 0 && (
+          <div className="mx-auto w-full max-w-4xl px-4 pt-4 pb-6 sm:px-6 lg:px-8">
+            <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100">Frequently Asked Questions</h2>
+            <dl className="mt-4 space-y-4">
+              {seo.faqs.map((faq, i) => (
+                <div key={i}>
+                  <dt className="text-sm font-semibold text-gray-800 dark:text-gray-200">{faq.question}</dt>
+                  <dd className="mt-1 text-sm text-gray-600 dark:text-gray-400">{faq.answer}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        )}
+
+        <AdSlot position="in-content" className="mx-auto w-full max-w-4xl px-4 py-2 sm:px-6 lg:px-8" />
 
         <div className="flex items-center gap-4 px-4 pb-2 sm:px-6 lg:px-8">
           <div className="flex-1">
