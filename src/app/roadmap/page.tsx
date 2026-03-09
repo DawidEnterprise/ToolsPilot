@@ -13,7 +13,7 @@ const phases = [
     status: "completed" as const,
     date: "March 2026",
     items: [
-      { text: "28 free browser-based tools", done: true },
+      { text: "100+ free browser-based tools", done: true },
       { text: "Dark mode support", done: true },
       { text: "Mobile-responsive design", done: true },
       { text: "SEO-optimized pages with FAQ schema", done: true },
@@ -33,7 +33,7 @@ const phases = [
       { text: "Microsoft Clarity heatmaps", done: false },
       { text: "Submit to 10+ tool directories", done: false },
       { text: "Reach 1,000 monthly visitors", done: false },
-      { text: "Get indexed on Google for all 28 tools", done: false },
+      { text: "Get indexed on Google for all tools", done: false },
     ],
   },
   {
@@ -98,7 +98,7 @@ export default function RoadmapPage() {
           Roadmap
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
-          Our plan to build the best free online toolbox. Follow along as we grow from 28 tools to 100+.
+          Our plan to build the best free online toolbox. Follow along as we grow beyond 100+ tools.
         </p>
       </div>
 

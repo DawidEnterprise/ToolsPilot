@@ -7,7 +7,7 @@ import { AdSlot } from "@/components/AdSlot";
 export const metadata: Metadata = {
   title: "All Free Online Tools — Developer, Image, Text & SEO Tools | ToolsPilot",
   description:
-    "Browse 163 free online tools: JSON formatter, image converter, PDF tools, calculators, SEO tools, and more. No signup required. 100% browser-based.",
+    "Browse 100+ free online tools: JSON formatter, image converter, text utilities, calculators, SEO tools, and more. No signup required. 100% browser-based.",
   keywords:
     "free online tools, developer tools, image converter, json formatter, pdf converter, calculator online, text tools, seo tools, password generator, qr code generator",
 };

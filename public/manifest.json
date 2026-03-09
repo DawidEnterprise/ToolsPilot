@@ -1,7 +1,7 @@
 {
   "name": "ToolsPilot",
   "short_name": "ToolsPilot",
-  "description": "Free online tools for developers, designers and marketers",
+  "description": "100+ free browser tools for developers, designers and marketers",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

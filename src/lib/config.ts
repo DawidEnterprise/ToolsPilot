@@ -5,7 +5,7 @@ export const siteConfig = {
   name: SITE_NAME,
   url: SITE_URL,
   description:
-    "500+ free online tools for developers, designers and marketers. Convert files, format code, generate text and more — all in your browser.",
+    "100+ free browser tools for developers, designers & marketers. Image converters, code formatters, text utilities, SEO analyzers & calculators — no signup, no uploads, 100% private.",
   ogImage: `${SITE_URL}/og-default.png`,
   twitterHandle: "@toolspilot",
   locale: "en_US",

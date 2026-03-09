@@ -40,6 +40,21 @@ export default function HomePage() {
 
         <AdSlot position="tool-top" className="mb-8" />
 
+        {/* ── Trending Tools — based on actual usage data ── */}
+        <section className="mb-10">
+          <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100">
+            🔥 Trending Tools
+          </h2>
+          <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {["png-to-jpg", "html-encoder", "live-html-preview", "text-diff"]
+              .map((slug) => published.find((t) => t.slug === slug))
+              .filter(Boolean)
+              .map((tool) => (
+                <ToolCard key={tool!.slug} tool={tool!} />
+              ))}
+          </div>
+        </section>
+
         {CATEGORIES.map((cat, idx) => {
           const catTools = published.filter((t) => t.category === cat.id);
           if (catTools.length === 0) return null;

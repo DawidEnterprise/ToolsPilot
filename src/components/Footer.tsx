@@ -14,7 +14,7 @@ export function Footer() {
               {siteConfig.name}
             </Link>
             <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-              Free online tools for developers, designers &amp; marketers.
+              100+ free browser tools for developers, designers &amp; marketers.
             </p>
           </div>
 

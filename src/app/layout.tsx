@@ -26,6 +26,10 @@ export const metadata: Metadata = {
     "image converter",
     "json formatter",
     "file converter",
+    "text tools",
+    "seo tools",
+    "browser tools",
+    "no signup tools",
   ],
   authors: [{ name: siteConfig.name }],
   openGraph: {

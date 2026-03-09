@@ -1,6 +1,6 @@
-# ⚡ ToolPilot — 500+ Free Online Tools Platform
+# ⚡ ToolsPilot — 100+ Free Online Tools Platform
 
-A massive, SEO-optimized utility tools platform built with **Next.js 14**, **TypeScript**, **TailwindCSS**, and **Azure**. Designed to scale from 3 tools to 500+ with a modular architecture where adding a new tool takes minutes.
+A massive, SEO-optimized utility tools platform built with **Next.js 14**, **TypeScript**, **TailwindCSS**, and **Azure**. Designed with a modular architecture where adding a new tool takes minutes.
 
 ---
 

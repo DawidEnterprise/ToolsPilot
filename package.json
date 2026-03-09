@@ -2,7 +2,7 @@
   "name": "toolpilot",
   "version": "1.0.0",
   "private": true,
-  "description": "ToolsPilot — 500+ free online tools for developers, designers and marketers",
+  "description": "ToolsPilot — 100+ free browser tools for developers, designers and marketers",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
