@@ -760,11 +760,25 @@ export const tools: ToolDefinition[] = [
     keywords: ["png", "webp", "convert", "compress", "smaller", "png to webp", "webp converter"],
   },
   {
+    slug: "webp-to-jpg", name: "WebP to JPG Converter",
+    description: "Convert WebP images to JPG format online for free. Widely compatible output.",
+    category: "image", icon: "image",
+    keywords: ["webp", "jpg", "jpeg", "convert", "image", "webp to jpg", "webp converter", "webp to jpeg"],
+    relatedTools: ["png-to-jpg", "webp-to-png", "jpg-to-webp"],
+  },
+  {
+    slug: "jpg-to-webp", name: "JPG to WebP Converter",
+    description: "Convert JPG images to WebP for smaller file sizes. Save 25-34% bandwidth.",
+    category: "image", icon: "image",
+    keywords: ["jpg", "jpeg", "webp", "convert", "compress", "smaller", "jpg to webp", "jpeg to webp", "image optimizer"],
+    relatedTools: ["png-to-webp", "webp-to-jpg", "image-compressor"],
+  },
+  {
     slug: "heic-to-jpg", name: "HEIC to JPG Converter",
     description: "Convert HEIC/HEIF images from iPhone to JPG format. Free online converter.",
     category: "image", icon: "image",
     keywords: ["heic", "jpg", "convert", "iphone", "heif", "apple", "heic to jpg", "heic converter"],
-    comingSoon: true,
+    relatedTools: ["png-to-jpg", "webp-to-jpg"],
   },
   {
     slug: "gif-maker", name: "GIF Maker",
